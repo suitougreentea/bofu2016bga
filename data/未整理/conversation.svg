@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="700"
+   height="1600"
+   viewBox="0 0 700 1600"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="conversation.svg"
+   style="enable-background:new"
+   inkscape:export-filename="/Users/suitougreentea/dev/bofu2016bga/data/未整理/conversation.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <filter
+       y="-0.25"
+       height="1.5"
+       inkscape:menu-tooltip="Darkens the edge with an inner blur and adds a flexible glow"
+       inkscape:menu="Shadows and Glows"
+       inkscape:label="Dark And Glow"
+       style="color-interpolation-filters:sRGB"
+       id="filter4242">
+      <feGaussianBlur
+         stdDeviation="5"
+         result="result6"
+         id="feGaussianBlur4244" />
+      <feComposite
+         result="result8"
+         in="SourceGraphic"
+         operator="atop"
+         in2="result6"
+         id="feComposite4246" />
+      <feComposite
+         result="result9"
+         operator="over"
+         in2="SourceAlpha"
+         in="result8"
+         id="feComposite4248" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 "
+         result="result10"
+         id="feColorMatrix4250" />
+      <feBlend
+         in="result10"
+         mode="normal"
+         in2="result6"
+         id="feBlend4252" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter4254"
+       inkscape:label="filter2">
+      <feColorMatrix
+         id="feColorMatrix4262"
+         type="matrix"
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 "
+         in="SourceGraphic"
+         result="result1" />
+      <feGaussianBlur
+         stdDeviation="7.2018561484918786"
+         id="feGaussianBlur4264"
+         in="result1"
+         result="result2" />
+      <feComposite
+         id="feComposite4270"
+         result="result4"
+         in2="result2" />
+      <feGaussianBlur
+         stdDeviation="12.300000000000001 0.90000000000000002"
+         id="feGaussianBlur4274"
+         in="SourceGraphic"
+         result="result6" />
+      <feMerge
+         id="feMerge4256"
+         result="result3">
+        <feMergeNode
+           inkscape:collect="always"
+           id="feMergeNode4266"
+           in="result4" />
+        <feMergeNode
+           inkscape:collect="always"
+           id="feMergeNode4268"
+           in="result6" />
+        <feMergeNode
+           inkscape:collect="always"
+           id="feMergeNode4276"
+           in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter
+       inkscape:label="filter2"
+       id="filter4167"
+       style="color-interpolation-filters:sRGB">
+      <feColorMatrix
+         result="result1"
+         in="SourceGraphic"
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 "
+         type="matrix"
+         id="feColorMatrix4169"
+         stdDeviation="1.8" />
+      <feGaussianBlur
+         result="result2"
+         in="result1"
+         id="feGaussianBlur4171"
+         stdDeviation="1.8019354838709676" />
+      <feComposite
+         in2="result2"
+         result="result4"
+         id="feComposite4173" />
+      <feGaussianBlur
+         result="result6"
+         in="SourceGraphic"
+         id="feGaussianBlur4175"
+         stdDeviation="9.5 0.01" />
+      <feMerge
+         result="result3"
+         id="feMerge4177"
+         stdDeviation="4.7999999999999998 0.01">
+        <feMergeNode
+           in="result4"
+           id="feMergeNode4179"
+           inkscape:collect="always" />
+        <feMergeNode
+           in="result6"
+           id="feMergeNode4181"
+           inkscape:collect="always" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode4183"
+           inkscape:collect="always" />
+      </feMerge>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter4189"
+       inkscape:label="filter2">
+      <feColorMatrix
+         id="feColorMatrix4191"
+         type="matrix"
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 "
+         in="SourceGraphic"
+         result="result1" />
+      <feGaussianBlur
+         stdDeviation="7.897842227378189"
+         id="feGaussianBlur4193"
+         in="result1"
+         result="result2" />
+      <feComposite
+         id="feComposite4195"
+         result="result4"
+         in2="result2" />
+      <feGaussianBlur
+         stdDeviation="5.7999999999999998 2.2999999999999998"
+         id="feGaussianBlur4197"
+         in="SourceGraphic"
+         result="result6" />
+      <feMerge
+         id="feMerge4199"
+         result="result3">
+        <feMergeNode
+           inkscape:collect="always"
+           id="feMergeNode4201"
+           in="result4" />
+        <feMergeNode
+           inkscape:collect="always"
+           id="feMergeNode4203"
+           in="result6" />
+        <feMergeNode
+           inkscape:collect="always"
+           id="feMergeNode4205"
+           in="SourceGraphic" />
+      </feMerge>
+      <feBlend
+         mode="normal"
+         id="feBlend4207"
+         in2="result3" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.70921986"
+     inkscape:cx="176.61198"
+     inkscape:cy="1063.3568"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="true"
+     units="px"
+     inkscape:window-width="1440"
+     inkscape:window-height="856"
+     inkscape:window-x="2"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:snap-bbox="true"
+     inkscape:snap-page="true"
+     showguides="false"
+     inkscape:snap-object-midpoints="false"
+     inkscape:snap-center="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-others="true"
+     inkscape:snap-to-guides="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4236"
+       spacingy="50"
+       spacingx="1000" />
+    <sodipodi:guide
+       position="0,0"
+       orientation="0,1280"
+       id="guide4241" />
+    <sodipodi:guide
+       position="1282.6748,822.69505"
+       orientation="-720,0"
+       id="guide4243" />
+    <sodipodi:guide
+       position="1280,720.00001"
+       orientation="0,-1280"
+       id="guide4245" />
+    <sodipodi:guide
+       position="0,720.00001"
+       orientation="720,0"
+       id="guide4247" />
+    <sodipodi:guide
+       position="54.609929,198.58156"
+       orientation="1,0"
+       id="guide4238" />
+    <sodipodi:guide
+       position="109.21986,201.41844"
+       orientation="1,0"
+       id="guide4259" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     style="opacity:1"
+     transform="translate(0,880)">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4249"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:Windsong;-inkscape-font-specification:Windsong;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><flowRegion
+         id="flowRegion4251"><rect
+           id="rect4253"
+           width="727.45697"
+           height="405.26849"
+           x="139.81763"
+           y="61.438702"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Windsong;-inkscape-font-specification:Windsong" /></flowRegion><flowPara
+         id="flowPara4255" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4261"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><flowRegion
+         id="flowRegion4263"><rect
+           id="rect4265"
+           width="298.63605"
+           height="275.19363"
+           x="435.21362"
+           y="68.708405" /></flowRegion><flowPara
+         id="flowPara4267" /></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:116.57792664px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4189)"
+       x="166.92148"
+       y="274.28293"
+       id="text4185"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.34948244,0,0,0.34948245,-37.581417,472.45893)"><tspan
+         sodipodi:role="line"
+         x="166.92148"
+         y="274.28293"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Windsong;-inkscape-font-specification:Windsong;fill:#e6e6e6"
+         id="tspan4213">Have sweet dreams!</tspan></text>
+    <g
+       id="g4199"
+       style="filter:url(#filter4167)"
+       transform="translate(-163.9395,318.96323)">
+      <rect
+         y="342.64334"
+         x="186.97595"
+         height="1.1239429"
+         width="47.244022"
+         id="rect4229"
+         style="opacity:1;fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:0.99999994;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <rect
+         y="322.83685"
+         x="177.30496"
+         height="41.843967"
+         width="65.957451"
+         id="rect4197"
+         style="opacity:1;fill:none;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+    <text
+       transform="matrix(0.34948244,0,0,0.34948245,26.028514,572.45893)"
+       sodipodi:linespacing="125%"
+       id="text4261"
+       y="274.28293"
+       x="166.92148"
+       style="font-style:normal;font-weight:normal;font-size:116.57792664px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4189)"
+       xml:space="preserve"><tspan
+         id="tspan4263"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Windsong;-inkscape-font-specification:Windsong;fill:#e6e6e6"
+         y="274.28293"
+         x="166.92148"
+         sodipodi:role="line">Yes. It was a great day.</tspan></text>
+    <text
+       transform="matrix(0.34948244,0,0,0.34948245,-37.581417,272.45893)"
+       sodipodi:linespacing="125%"
+       id="text4265"
+       y="274.28293"
+       x="166.92148"
+       style="font-style:normal;font-weight:normal;font-size:116.57792664px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4189)"
+       xml:space="preserve"><tspan
+         id="tspan4267"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Windsong;-inkscape-font-specification:Windsong;fill:#e6e6e6"
+         y="274.28293"
+         x="166.92148"
+         sodipodi:role="line">There goes a shooting star!</tspan></text>
+    <g
+       transform="translate(-163.9395,118.96323)"
+       style="filter:url(#filter4167)"
+       id="g4269">
+      <rect
+         style="opacity:1;fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:0.99999994;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4271"
+         width="47.244022"
+         height="1.1239429"
+         x="186.97595"
+         y="342.64334" />
+      <rect
+         style="opacity:1;fill:none;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4273"
+         width="65.957451"
+         height="41.843967"
+         x="177.30496"
+         y="322.83685" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:116.57792664px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4189)"
+       x="166.92148"
+       y="274.28293"
+       id="text4275"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.34948244,0,0,0.34948245,26.028514,372.45893)"><tspan
+         sodipodi:role="line"
+         x="166.92148"
+         y="274.28293"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Windsong;-inkscape-font-specification:Windsong;fill:#e6e6e6"
+         id="tspan4277">Beautiful! It's a mystery of universe.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:116.57792664px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4189)"
+       x="166.92148"
+       y="274.28293"
+       id="text4279"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.34948244,0,0,0.34948245,-37.581417,72.45893)"><tspan
+         sodipodi:role="line"
+         x="166.92148"
+         y="274.28293"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Windsong;-inkscape-font-specification:Windsong;fill:#e6e6e6"
+         id="tspan4281">It's getting dark.</tspan></text>
+    <g
+       id="g4283"
+       style="filter:url(#filter4167)"
+       transform="translate(-163.9395,-81.03677)">
+      <rect
+         y="342.64334"
+         x="186.97595"
+         height="1.1239429"
+         width="47.244022"
+         id="rect4285"
+         style="opacity:1;fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:0.99999994;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <rect
+         y="322.83685"
+         x="177.30496"
+         height="41.843967"
+         width="65.957451"
+         id="rect4287"
+         style="opacity:1;fill:none;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+    <text
+       transform="matrix(0.34948244,0,0,0.34948245,26.028514,172.45893)"
+       sodipodi:linespacing="125%"
+       id="text4289"
+       y="274.28293"
+       x="166.92148"
+       style="font-style:normal;font-weight:normal;font-size:116.57792664px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4189)"
+       xml:space="preserve"><tspan
+         id="tspan4291"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Windsong;-inkscape-font-specification:Windsong;fill:#e6e6e6"
+         y="274.28293"
+         x="166.92148"
+         sodipodi:role="line">Yes, and I'm getting hungry.</tspan></text>
+    <text
+       transform="matrix(0.34948244,0,0,0.34948245,-37.581417,-127.54107)"
+       sodipodi:linespacing="125%"
+       id="text4293"
+       y="274.28293"
+       x="166.92148"
+       style="font-style:normal;font-weight:normal;font-size:116.57792664px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4189)"
+       xml:space="preserve"><tspan
+         id="tspan4295"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Windsong;-inkscape-font-specification:Windsong;fill:#e6e6e6"
+         y="274.28293"
+         x="166.92148"
+         sodipodi:role="line">The sky is vidvid, brilliant orange.</tspan></text>
+    <g
+       transform="translate(-163.9395,-281.03677)"
+       style="filter:url(#filter4167)"
+       id="g4297">
+      <rect
+         style="opacity:1;fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:0.99999994;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4299"
+         width="47.244022"
+         height="1.1239429"
+         x="186.97595"
+         y="342.64334" />
+      <rect
+         style="opacity:1;fill:none;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4301"
+         width="65.957451"
+         height="41.843967"
+         x="177.30496"
+         y="322.83685" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:116.57792664px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4189)"
+       x="166.92148"
+       y="274.28293"
+       id="text4303"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.34948244,0,0,0.34948245,26.028514,-27.54107)"><tspan
+         sodipodi:role="line"
+         x="166.92148"
+         y="274.28293"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Windsong;-inkscape-font-specification:Windsong;fill:#e6e6e6"
+         id="tspan4305">May it be a fine day tomorrow.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:116.57792664px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4189)"
+       x="166.92148"
+       y="274.28293"
+       id="text4307"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.34948244,0,0,0.34948245,-37.581417,-327.54107)"><tspan
+         sodipodi:role="line"
+         x="166.92148"
+         y="274.28293"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Windsong;-inkscape-font-specification:Windsong;fill:#e6e6e6"
+         id="tspan4309">It's so refreshing!</tspan></text>
+    <g
+       id="g4311"
+       style="filter:url(#filter4167)"
+       transform="translate(-163.9395,-481.03677)">
+      <rect
+         y="342.64334"
+         x="186.97595"
+         height="1.1239429"
+         width="47.244022"
+         id="rect4313"
+         style="opacity:1;fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:0.99999994;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <rect
+         y="322.83685"
+         x="177.30496"
+         height="41.843967"
+         width="65.957451"
+         id="rect4315"
+         style="opacity:1;fill:none;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+    <text
+       transform="matrix(0.34948244,0,0,0.34948245,26.028514,-227.54107)"
+       sodipodi:linespacing="125%"
+       id="text4317"
+       y="274.28293"
+       x="166.92148"
+       style="font-style:normal;font-weight:normal;font-size:116.57792664px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4189)"
+       xml:space="preserve"><tspan
+         id="tspan4319"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Windsong;-inkscape-font-specification:Windsong;fill:#e6e6e6"
+         y="274.28293"
+         x="166.92148"
+         sodipodi:role="line">It gives me vitality, really.</tspan></text>
+    <text
+       transform="matrix(0.34948244,0,0,0.34948245,-37.581417,-527.54107)"
+       sodipodi:linespacing="125%"
+       id="text4321"
+       y="274.28293"
+       x="166.92148"
+       style="font-style:normal;font-weight:normal;font-size:116.57792664px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4189)"
+       xml:space="preserve"><tspan
+         id="tspan4323"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Windsong;-inkscape-font-specification:Windsong;fill:#e6e6e6"
+         y="274.28293"
+         x="166.92148"
+         sodipodi:role="line">Hear the sound of leaves rustling in the wind..</tspan></text>
+    <g
+       transform="translate(-163.9395,-681.03677)"
+       style="filter:url(#filter4167)"
+       id="g4325">
+      <rect
+         style="opacity:1;fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:0.99999994;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4327"
+         width="47.244022"
+         height="1.1239429"
+         x="186.97595"
+         y="342.64334" />
+      <rect
+         style="opacity:1;fill:none;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4329"
+         width="65.957451"
+         height="41.843967"
+         x="177.30496"
+         y="322.83685" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:116.57792664px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4189)"
+       x="166.92148"
+       y="274.28293"
+       id="text4331"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.34948244,0,0,0.34948245,26.028514,-427.54107)"><tspan
+         sodipodi:role="line"
+         x="166.92148"
+         y="274.28293"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Windsong;-inkscape-font-specification:Windsong;fill:#e6e6e6"
+         id="tspan4333">I feel as if I were in the deep forest..</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:116.57792664px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4189)"
+       x="166.92148"
+       y="274.28293"
+       id="text4349"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.34948244,0,0,0.34948245,-37.581417,-727.54107)"><tspan
+         sodipodi:role="line"
+         x="166.92148"
+         y="274.28293"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Windsong;-inkscape-font-specification:Windsong;fill:#e6e6e6"
+         id="tspan4351">How does it taste?</tspan></text>
+    <g
+       id="g4353"
+       style="filter:url(#filter4167)"
+       transform="translate(-163.9395,-881.03677)">
+      <rect
+         y="342.64334"
+         x="186.97595"
+         height="1.1239429"
+         width="47.244022"
+         id="rect4355"
+         style="opacity:1;fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:0.99999994;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <rect
+         y="322.83685"
+         x="177.30496"
+         height="41.843967"
+         width="65.957451"
+         id="rect4357"
+         style="opacity:1;fill:none;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+    <text
+       transform="matrix(0.34948244,0,0,0.34948245,26.028514,-627.54107)"
+       sodipodi:linespacing="125%"
+       id="text4359"
+       y="274.28293"
+       x="166.92148"
+       style="font-style:normal;font-weight:normal;font-size:116.57792664px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4189)"
+       xml:space="preserve"><tspan
+         id="tspan4361"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Windsong;-inkscape-font-specification:Windsong;fill:#e6e6e6"
+         y="274.28293"
+         x="166.92148"
+         sodipodi:role="line">Great, as always.</tspan></text>
+    <text
+       transform="matrix(0.34948244,0,0,0.34948245,-37.581417,-927.54107)"
+       sodipodi:linespacing="125%"
+       id="text4363"
+       y="274.28293"
+       x="166.92148"
+       style="font-style:normal;font-weight:normal;font-size:116.57792664px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4189)"
+       xml:space="preserve"><tspan
+         id="tspan4365"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Windsong;-inkscape-font-specification:Windsong;fill:#e6e6e6"
+         y="274.28293"
+         x="166.92148"
+         sodipodi:role="line">What dream did you have last night? </tspan></text>
+    <g
+       transform="translate(-163.9395,-1081.0368)"
+       style="filter:url(#filter4167)"
+       id="g4367">
+      <rect
+         style="opacity:1;fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:0.99999994;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4369"
+         width="47.244022"
+         height="1.1239429"
+         x="186.97595"
+         y="342.64334" />
+      <rect
+         style="opacity:1;fill:none;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4371"
+         width="65.957451"
+         height="41.843967"
+         x="177.30496"
+         y="322.83685" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:116.57792664px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4189)"
+       x="166.92148"
+       y="274.28293"
+       id="text4373"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.34948244,0,0,0.34948245,26.028514,-827.54107)"><tspan
+         sodipodi:role="line"
+         x="166.92148"
+         y="274.28293"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Windsong;-inkscape-font-specification:Windsong;fill:#e6e6e6"
+         id="tspan4375">Good one. It's going to be a good day.</tspan></text>
+  </g>
+</svg>
