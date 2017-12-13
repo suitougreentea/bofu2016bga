@@ -6,108 +6,72 @@ import processing.event.KeyEvent
 import java.util.*
 import kotlin.properties.Delegates
 import processing.core.PConstants.*
+import processing.opengl.PShader
 
 fun main(args: Array<String>) {
   PApplet.main("io.github.suitougreentea.bofu2016bga.Main")
 }
 
-// TODO: Gradient
 class Main : PApplet() {
   val FRAME_RATE = 30f
   var minim: Minim by Delegates.notNull()
   var res: Res by Delegates.notNull()
   var input: MutableMap<Char, Int> = hashMapOf('[' to 0, ']' to 0)
+  var bg: PGraphics by Delegates.notNull()
 
-  var scene1: Scene1 by Delegates.notNull()
-  var scene2: Scene2 by Delegates.notNull()
-  var scene3: Scene3 by Delegates.notNull()
-  var scene4: Scene4 by Delegates.notNull()
-  var scene5: Scene5 by Delegates.notNull()
-  var scene6: Scene6 by Delegates.notNull()
-  var scene7: Scene7 by Delegates.notNull()
+  var scenes: Array<Scene> by Delegates.notNull()
 
-  /*
-      2
-      134
-     875
-       6
-   */
-  val pieceColors = arrayOf(
-          arrayOf(0x376698, 0xCCCCCC, 0x9999CC, 0x400000),
-          arrayOf(0xE8E9E6, 0x38343F, 0x528E13, 0x006C6C),
-          arrayOf(0x724300, 0x272A56, 0xFF9917, 0x404040),
-          arrayOf(0xBB885E, 0x87766E, 0xCC9966, 0xFFCC66)
+  val colors = arrayOf(
+          Triple(0.3f, 0.8f, 0.8f),
+          Triple(0.4f, 0.8f, 0.8f),
+          Triple(0.55f, 0.8f, 0.8f),
+          Triple(0.7f, 0.8f, 0.8f),
+          Triple(0.85f, 0.8f, 0.8f),
+          Triple(1f, 0.8f, 0.8f),
+          Triple(1.15f, 0.8f, 0.8f),
+          Triple(1.15f, 0.8f, 0.8f)
   )
-
-  val piecePos = arrayOf(
-          Pair(1, 1),
-          Pair(1, 0),
-          Pair(2, 1),
-          Pair(3, 1),
-          Pair(2, 2),
-          Pair(2, 3),
-          Pair(1, 2),
-          Pair(0, 2),
-          Pair(0, 0),
-          Pair(0, 1),
-          Pair(2, 0),
-          Pair(3, 0),
-          Pair(1, 3),
-          Pair(0, 3),
-          Pair(3, 2),
-          Pair(3, 3)
-  )
-
-  val piecePosInv = piecePos.mapIndexed { i, e -> Pair(e, i) }.toMap()
-
-  init {
-    randomSeed(3456009L)
-  }
-  val pieceColorsExpanded = (0..5).map { iy -> (0..5).map { ix ->
-    if(ix in 1..4 && iy in 1..4) pieceColors[iy - 1][ix - 1]
-    else random(0x000000.toFloat(), 0xFFFFFF.toFloat()).toInt()
-  } }
 
   override fun settings() {
-    size(1280, 720, P3D)
+    size(1280, 720, P2D)
   }
 
   override fun setup() {
     minim = Minim(this)
-
     res = Res(this, minim)
-    scene1 = Scene1()
-    scene2 = Scene2(this)
-    scene3 = Scene3(this)
-    scene4 = Scene4(this)
-    scene5 = Scene5(this)
-    scene6 = Scene6()
-    scene7 = Scene7()
-
-    /*pieceColors.forEachIndexed { iy, ey ->
-      ey.forEachIndexed { ix, color ->
-        val g = createGraphics(1280, 720)
-        g.beginDraw()
-        println(ix)
-        g.tint(opaq(color))
-        g.image(res.glass, 0f, 0f, 1280f, 720f, ix * 1280, iy * 720, ix * 1280 + 1280, iy * 720 + 720)
-        g.endDraw()
-        g.save("glass${ix + iy * 4}.png")
-      }
-    }*/
 
     colorMode(RGB, 1f, 1f, 1f, 1f)
     frameRate(FRAME_RATE)
     background(0f, 0f, 0f)
     smooth()
-    strokeWeight(5f)
     keyRepeatEnabled = false
+
+    scenes = Array(6, { when(it){
+      0 -> Scene1(this)
+      1 -> Scene2(this)
+      2 -> Scene3(this)
+      3 -> Scene4(this)
+      4 -> Scene5(this)
+      5 -> Scene6(this)
+      else -> object: Scene {
+        override val startBeat = 0f
+
+        override fun draw(app: Main, frame: Int, beat: Float) {}
+      }
+    }})
+
+    bg = createGraphics(1280, 720)
+
     res.music.play()
 
+    jump(2f)
+    //jump(4f)
     //jump(36f)
-    //jump(36f + 32f + 32f + 32f + 28f)
+    //jump(36f + 32f)
+    //jump(36f + 32f + 32f)
+    //jump(36f + 32f + 32f + 32f)
     //jump(36f + 32f + 32f + 32f + 32f)
-    jump(36f + 32f + 32f + 32f + 32f + 32f)
+    //jump(36f + 32f + 32f + 32f + 32f + 32f)
   }
 
   // frame = beat / (beat / min) * (frame / min)
@@ -148,6 +112,13 @@ class Main : PApplet() {
   var offset = 0
   var musicWaiting = false
   var musicJump = false
+
+  var px = 0f
+  var py = 0f
+  var pz = 0f
+  var vx = 0f
+  var vy = 0f
+  var vz = 0f
 
   fun getSpeedTableIndexFromBeat(beat: Float) = if(beat <= 0f) 0 else speedTable.indexOfLast { it.first < beat }
   fun getSpeedTableFromBeat(beat: Float) = speedTable[getSpeedTableIndexFromBeat(beat)]
@@ -192,34 +163,57 @@ class Main : PApplet() {
 
     input.mapValuesTo(input) { if(it.value > 0) it.value + 1 else 0 }
 
+    withGraphics(bg) {
+      val fx = cos(frame / 15.4245f * PI) * 80f
+      val fy = sin(frame / 12f * PI) * 80f
+      val fz = cos(frame / 10.583f * PI + 4f / PI) * 80f
+      val ax = (fx - px) / 80f
+      val ay = (fy - py) / 80f
+      val az = (fz - pz) / 80f
+      vx += ax
+      vy += ay
+      vz += az
+      px += vx / 2f
+      py += vy / 2f
+      pz += vz / 2f
+
+      val i = max(0, ((beat - 4f) / 32f).toInt())
+      val b = (beat - 4f) % 32f
+      val (h, s, l) = if(b in 0f..3f && i >= 1) {
+        val p = colors[i - 1]
+        val c = colors[i]
+        val t = cnorm(b, 0f, 3f)
+        Triple(lerp(p.first, c.first, t), lerp(p.second, c.second, t), lerp(p.third, c.third, t))
+      } else colors[i]
+
+      // うごかしたい
+      clear()
+      colorMode(HSB, 1f)
+      noStroke()
+      fill((h + px / 7000f) % 1f, s + py / 1800f, l + pz / 2600f)
+      rect(0f, 0f, 1280f, 720f)
+
+      blendMode(ADD)
+      tint(0.2f)
+      pushMatrix()
+      iimage(res.gradient, px, py - 280f)
+      popMatrix()
+      blendMode(BLEND)
+      colorMode(RGB, 1f)
+    }
+
     clear()
+
 
     // start
 
-    scene1.draw(this, frame, beat)
-    scene2.draw(this, frame, beat)
-    scene3.draw(this, frame, beat)
-    scene4.draw(this, frame, beat)
-    scene5.draw(this, frame, beat)
-    scene6.draw(this, frame, beat)
-    scene7.draw(this, frame, beat)
-
-    /*
-    noStroke()
-    fill(1f, 1f, 1f)
-    textAlign(CENTER)
-    textFont(res.font)
-    textSize(96f)
-    text("A Piece of Mine", 640f, 320f)
-    textSize(48f)
-    text("Greentea", 640f, 420f)
-    */
+    scenes.forEach { it.draw(this, frame, beat) }
 
     // end
 
-    hint(DISABLE_DEPTH_TEST)
+    //hint(DISABLE_DEPTH_TEST)
 
-    noStroke()
+    /*noStroke()
     fill(1f, 1f, 1f)
     textFont(res.fontSans)
     textSize(12f)
@@ -227,7 +221,8 @@ class Main : PApplet() {
     text(frameRate.toString(), 10f, 710f)
 
     textAlign(LEFT, TOP)
-    text(arrayOf("${frameCount}", "${speedTableIndex}", "${beat}").joinToString("\n"), 10f, 10f)
+    text(arrayOf("${frameCount}", "${speedTableIndex}", "${beat}").joinToString("\n"), 10f, 10f)*/
+    saveFrame()
   }
 
   override fun keyPressed(event: KeyEvent?) {
@@ -241,6 +236,8 @@ class Main : PApplet() {
   }
 
   fun cnorm(value: Float, start: Float, stop: Float) = constrain(norm(value, start, stop), 0f, 1f)
+  fun norm0(value: Float, start: Float, stop: Float) = if(value in start..stop) norm(value, start, stop) else 0f
+  fun norm1(value: Float, start: Float, stop: Float) = if(value in start..stop) norm(value, start, stop) else 1f
   fun cmap(value: Float, start: Float, stop: Float, min: Float, max: Float) = constrain(map(value, start, stop, min, max), min, max)
 
   fun inv(x: Float) = 1 - x
@@ -253,6 +250,9 @@ class Main : PApplet() {
   fun alpha(c: Int, a: Float) = c + ((a * 0xFF).toInt() shl 24)
 
   fun iimage(img: PImage, x: Float, y: Float) = image(img, x.toInt().toFloat(), y.toInt().toFloat())
+
+  fun back(cx: Float, cy: Float) {
+  }
 
   fun rrect(x: Float, y: Float, width: Float, height: Float, rad: Float) {
     val x1 = height * sin(rad)
@@ -272,8 +272,27 @@ class Main : PApplet() {
 
   fun rotdp(t: Float) = if(t <= 0.5f) t * PI else -PI + t * PI
   fun rotdm(t: Float) = if(t <= 0.5f) t * -PI else PI - t * PI
+
+  inline fun <R> withGraphics(receiver: PGraphics, f: PGraphics.() -> R) {
+    receiver.beginDraw()
+    receiver.f()
+    receiver.endDraw()
+  }
+
+  inline fun <R> saveMatrix(f: () -> R) {
+    pushMatrix()
+    f()
+    popMatrix()
+  }
 }
 
 fun PGraphics.iimage(img: PImage, x: Float, y: Float) {
   this.image(img, x.toInt().toFloat(), y.toInt().toFloat())
 }
+
+inline fun <R> PGraphics.saveMatrix(f: () -> R) {
+  this.pushMatrix()
+  f()
+  this.popMatrix()
+}
+

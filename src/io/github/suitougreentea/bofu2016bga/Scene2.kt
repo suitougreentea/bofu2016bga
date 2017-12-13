@@ -1,136 +1,104 @@
 package io.github.suitougreentea.bofu2016bga
 
+import ddf.minim.analysis.FFT
 import processing.core.PApplet.*
+import processing.core.PConstants
 import processing.core.PConstants.*
 import processing.core.PGraphics
 
-/**
- * [36, 68)
- * [68, 100)
- * [100, 132)
- * [132, 164)
- *
- * 画像の横幅は1728なのでOffsetは[0, 448]
- */
+class Scene2(app: Main): Scene {
+  override val startBeat = 36f
 
-// TODO: offset
-class Scene2(app: Main): Scene2345(app, 0) {
-  fun draw(app: Main, frame: Int, beat: Float) {
-    if(beat !in startBeat - 1f..startBeat + 33f) return
-    updateBuffer(app, frame, beat)
+  val col = 40
+  val fft = FFT(app.res.music.bufferSize(), app.res.music.sampleRate())
+  val state = Array(col, { 0f }).toMutableList()
+  val average = arrayOf(
+          3166.9336, 3166.9336, 4661.7144, 4661.7144, 4661.7144, 4661.7144, 2980.7876, 2980.7876, 1737.2882, 1737.2882, 1921.398, 1979.3142, 2090.9055, 2092.2158, 2569.0913, 4612.6255, 852.99585, 805.60236, 437.22314, 656.677, 612.6237, 344.47433, 184.42592, 210.88548, 127.73367, 120.30445, 96.05319, 75.48348, 85.3911, 48.798298, 47.724876, 43.7009, 31.446964, 28.391771, 26.407085, 22.272476, 23.391443, 20.225485, 13.1204405, 9.673673
+  ).map { (it / 240f).toFloat() }
+
+  val beatList = (0..27).map { it.toFloat() } + listOf(28f, 29f, 30f, 30.75f, 31f, 31.5f)
+
+  val graph = app.createGraphics(1280, 720)
+
+  override fun draw(app: Main, frame: Int, beat: Float) {
+    val bnorm = createBNorm(app, beat)
+    val bin = createBIn(app, beat)
+
+    if(!bin(0f, 32f + 3f)) return
 
     with(app) {
-      when {
-        beat < startBeat -> {
-        }
-        beat in startBeat..startBeat + 3f -> {
-          pushMatrix()
-          val t = cnorm(beat, startBeat, startBeat + 1.5f)
-          val s = cube1(t)
-          val (cx1, cy1) = cameraPos[index].first
-          val (cx2, cy2) = cameraPos[index].second
-          val cx = lerp(cx1, cx2, s) * 1280f
-          val cy = lerp(cy1, cy2, s) * 720f
+      fft.forward(res.music.mix)
+      state.forEachIndexed { i, e ->
+        val n = fft.getFreq(50f * exp((i / col.toFloat()) * log(20000f / 50f)))
+        state[i] = max(e - 0.1f, map(constrain(n / average[i], 2f, 10f), 2f, 10f, 0f, 12f))
+      }
 
-          val ta = cnorm(beat, startBeat + 1.5f, startBeat + 3f)
-          val sa = cube1(ta)
-          translate(640f, 360f)
-          scale(lerp(0.4f, 1.0f, sa))
-          translate(-cx, -cy)
-          if(beat in startBeat..startBeat + 1.5f) drawPieces(app) else drawPieces(app, skipPiece1[index].first, skipPiece1[index].second)
+      withGraphics(graph) {
+        clear()
+        colorMode(RGB, 1f)
+        blendMode(ADD)
 
-          popMatrix()
-
-          if (beat in startBeat + 1.5f..startBeat + 3f) {
-            val t = cnorm(beat, startBeat + 1.5f, startBeat + 3f)
-            val s = cube1(t)
-            pushMatrix()
-            translate(640f, 360f)
-            rotateY(PI - PI * sa)
-            scale(lerp(0.4f, 1.0f, sa))
-            translate(-640f, -360f)
-            if (sa <= 0.5) {
-              val (ix, iy) = skipPiece1[index]
-              fill(opaq(pieceColors[iy][ix]))
+        saveMatrix {
+          translate(640f, 720f)
+          rectMode(CENTER)
+          state.forEachIndexed { i, e ->
+            saveMatrix {
+              rotate(lerp(-PI / 2.2f, PI / 2.2f, i / (col - 1).toFloat()))
               noStroke()
-              rect(0f, 0f, 1280f, 720f)
-            } else {
-              image(g1, 0f, 0f)
-            }
-            popMatrix()
-          }
-        }
-        beat in startBeat + 3f..startBeat + 15.5f -> {
-          image(g1, 0f, 0f)
-        }
-        beat in startBeat + 15.5f..startBeat + 16.5f -> {
-          val t = cnorm(beat, startBeat + 15.5f, startBeat + 16.5f)
-          val s = cube1(t)
-          pushMatrix()
-          translate(0f, s * 720f)
-          //translate(-s * 1280f, 0f)
-          image(g1, 0f, 0f)
-          translate(0f, -720f)
-          //translate(1280f, 0f)
-          image(g2, 0f, 0f)
-          popMatrix()
-        }
-        beat in startBeat + 16.5f..startBeat + 29.5f -> {
-          image(g2, 0f, 0f)
-        }
-        beat in startBeat + 29.5f..startBeat + 31f -> {
-          pushMatrix()
-          val t = cnorm(beat, startBeat + 29.5f, startBeat + 31f)
-          val s = cube1(t)
-          val (sx, sy) = skipPiece2[index]
-          val cx = sx * 1280f + 640f
-          val cy = sy * 720f + 360f
-
-          translate(640f, 360f)
-          scale(lerp(1.0f, 0.4f, s))
-          translate(-cx, -cy)
-          drawPieces(app, skipPiece2[index].first, skipPiece2[index].second)
-          popMatrix()
-
-          pushMatrix()
-          translate(640f, 360f)
-          rotateY(PI * s)
-          scale(lerp(1.0f, 0.4f, s))
-          translate(-640f, -360f)
-          if (s <= 0.5) {
-            image(g2, 0f, 0f)
-          } else {
-            val (ix, iy) = skipPiece1[index]
-            fill(opaq(pieceColors[iy][ix]))
-            noStroke()
-            rect(0f, 0f, 1280f, 720f)
-          }
-          popMatrix()
-        }
-        beat in startBeat + 31f..startBeat + 32f -> {
-          // 2, 1を中心とした回転がしたい
-          val t = cnorm(beat, startBeat + 31f, startBeat + 32f)
-          val s = pow1(t, 2.5f)
-          pushMatrix()
-          translate(640f * 1.4f, 360f * 1.4f)
-          scale(0.5f)
-          rotateZ(PI * s)
-          (0..5).forEach { ix ->
-            (0..5).forEach { iy ->
-              noStroke()
-              val color = if (ix in 1..4 && iy in 1..4) pieceColors[iy - 1][ix - 1] else pieceColorsExpanded[iy][ix]
-              fill(opaq(color))
-              val ox = (ix - 3) * 1280f
-              val oy = (iy - 2) * 720f
-              rect(ox, oy, 1280f, 720f)
+              (0..e.toInt()).forEach {
+                val a = constrain(e - it, 0f, 1f)
+                fill(0.1f * a)
+                rect(0f, -400f - it * 30f, 20f, 20f)
+                rect(0f, -400f - it * 30f, 14f, 14f)
+              }
             }
           }
-          popMatrix()
+          rectMode(CORNER)
+
+          ellipseMode(CENTER)
+          beatList.forEach {
+            if(bin(it, it + 1.5f)) {
+              val t = bnorm(it, it + 1.5f)
+              val r = lerp(370f * 2f, 300f * 2f, t)
+              val a = inv(t)
+              val w = inv(t) * 5f
+              stroke(a * 0.2f)
+              strokeWeight(w)
+              noFill()
+              ellipse(0f, 0f, r, r)
+            }
+          }
+
+          val t = (beat + 0.5f) % 1f
+          val a = lerp(0.1f, 0f, t)
+          noStroke()
+          fill(a)
+          ellipse(0f, 0f, 270f * 2f, 270f * 2f)
         }
-        else -> {
+
+        if(bin(31f, 33f)) {
+          val t = bnorm(31f, 33f)
+          val s = cube1(t) * 1600f
+          val w = t * 30f
+          val a = inv(t) * 0.2f
+          noFill()
+          stroke(a)
+          strokeWeight(w)
+          ellipse(640f, 720f, s, s)
         }
       }
+
+      if(bin(3f, 35f)) image(app.bg, 0f, 0f)
+      blendMode(ADD)
+      if(bin(0f, 3f)) {
+        tint(1f, 1f, 1f, bnorm(0f, 3f))
+      }
+      if(bin(32f, 35f)) {
+        tint(1f, 1f, 1f, inv(bnorm(32f, 35f)))
+      }
+      image(graph, 0f, 0f)
+      tint(1f)
+      blendMode(BLEND)
     }
   }
 }
-

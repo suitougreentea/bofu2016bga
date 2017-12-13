@@ -1,0 +1,368 @@
+0, 0, Header, 1, 18, 960
+1, 0, Start_track
+1, 0, Title_t, ""
+1, 0, Time_signature, 4, 2, 24, 8
+1, 0, End_track
+2, 0, Start_track
+2, 0, Title_t, "System Setup"
+2, 0, MIDI_port, 0
+2, 0, End_track
+3, 0, Start_track
+3, 0, Title_t, ""
+3, 0, MIDI_port, 0
+3, 0, Note_on_c, 0, 53, 97
+3, 10, Note_on_c, 0, 58, 99
+3, 20, Note_on_c, 0, 61, 95
+3, 436, Note_off_c, 0, 53, 0
+3, 492, Note_off_c, 0, 61, 0
+3, 527, Note_off_c, 0, 58, 0
+3, 720, Note_on_c, 0, 53, 65
+3, 730, Note_on_c, 0, 58, 64
+3, 740, Note_on_c, 0, 61, 72
+3, 771, Note_off_c, 0, 58, 0
+3, 845, Note_off_c, 0, 61, 0
+3, 879, Note_off_c, 0, 53, 0
+3, 1440, Note_on_c, 0, 53, 79
+3, 1450, Note_on_c, 0, 58, 83
+3, 1460, Note_on_c, 0, 61, 80
+3, 2076, Note_off_c, 0, 53, 0
+3, 2084, Note_off_c, 0, 58, 0
+3, 2147, Note_off_c, 0, 61, 0
+3, 2400, Note_on_c, 0, 53, 80
+3, 2410, Note_on_c, 0, 58, 75
+3, 2420, Note_on_c, 0, 61, 77
+3, 2890, Note_off_c, 0, 58, 0
+3, 2923, Note_off_c, 0, 53, 0
+3, 2948, Note_off_c, 0, 61, 0
+3, 3120, Note_on_c, 0, 53, 66
+3, 3130, Note_on_c, 0, 58, 64
+3, 3140, Note_on_c, 0, 61, 69
+3, 3360, Note_off_c, 0, 61, 0
+3, 3360, Note_on_c, 0, 63, 67
+3, 3583, Note_off_c, 0, 53, 0
+3, 3600, Note_off_c, 0, 58, 0
+3, 3600, Note_off_c, 0, 63, 0
+3, 3600, Note_on_c, 0, 61, 59
+3, 3840, Note_off_c, 0, 61, 0
+3, 3840, Note_on_c, 0, 52, 77
+3, 3850, Note_on_c, 0, 53, 79
+3, 3860, Note_on_c, 0, 57, 81
+3, 3870, Note_on_c, 0, 60, 76
+3, 4427, Note_off_c, 0, 57, 0
+3, 4446, Note_off_c, 0, 60, 0
+3, 4451, Note_off_c, 0, 53, 0
+3, 4456, Note_off_c, 0, 52, 0
+3, 4560, Note_on_c, 0, 52, 70
+3, 4570, Note_on_c, 0, 53, 80
+3, 4580, Note_on_c, 0, 57, 81
+3, 4590, Note_on_c, 0, 60, 78
+3, 4616, Note_off_c, 0, 57, 0
+3, 4618, Note_off_c, 0, 52, 0
+3, 4621, Note_off_c, 0, 53, 0
+3, 4688, Note_off_c, 0, 60, 0
+3, 5280, Note_on_c, 0, 52, 73
+3, 5290, Note_on_c, 0, 53, 80
+3, 5300, Note_on_c, 0, 57, 81
+3, 5310, Note_on_c, 0, 60, 81
+3, 5790, Note_off_c, 0, 57, 0
+3, 5814, Note_off_c, 0, 53, 0
+3, 5825, Note_off_c, 0, 52, 0
+3, 5838, Note_off_c, 0, 60, 0
+3, 6240, Note_on_c, 0, 52, 77
+3, 6250, Note_on_c, 0, 56, 90
+3, 6260, Note_on_c, 0, 59, 86
+3, 6270, Note_on_c, 0, 62, 80
+3, 6280, Note_on_c, 0, 67, 78
+3, 6662, Note_off_c, 0, 52, 0
+3, 6702, Note_off_c, 0, 56, 0
+3, 6702, Note_off_c, 0, 59, 0
+3, 6720, Note_off_c, 0, 62, 0
+3, 6744, Note_off_c, 0, 67, 0
+3, 6960, Note_on_c, 0, 52, 85
+3, 6970, Note_on_c, 0, 56, 77
+3, 6980, Note_on_c, 0, 59, 86
+3, 6990, Note_on_c, 0, 65, 89
+3, 7483, Note_off_c, 0, 59, 0
+3, 7489, Note_off_c, 0, 52, 0
+3, 7495, Note_off_c, 0, 56, 0
+3, 7527, Note_off_c, 0, 65, 0
+3, 7680, Note_on_c, 0, 52, 66
+3, 7690, Note_on_c, 0, 57, 81
+3, 7700, Note_on_c, 0, 59, 84
+3, 7710, Note_on_c, 0, 60, 81
+3, 7720, Note_on_c, 0, 64, 81
+3, 8160, Note_off_c, 0, 59, 0
+3, 8233, Note_off_c, 0, 52, 0
+3, 8243, Note_off_c, 0, 57, 0
+3, 8257, Note_off_c, 0, 64, 0
+3, 8266, Note_off_c, 0, 60, 0
+3, 8400, Note_on_c, 0, 52, 72
+3, 8410, Note_on_c, 0, 57, 74
+3, 8420, Note_on_c, 0, 59, 62
+3, 8430, Note_on_c, 0, 60, 78
+3, 8440, Note_on_c, 0, 64, 74
+3, 8462, Note_off_c, 0, 59, 0
+3, 8525, Note_off_c, 0, 60, 0
+3, 8533, Note_off_c, 0, 52, 0
+3, 8552, Note_off_c, 0, 57, 0
+3, 8581, Note_off_c, 0, 64, 0
+3, 9120, Note_on_c, 0, 52, 76
+3, 9130, Note_on_c, 0, 57, 75
+3, 9140, Note_on_c, 0, 59, 80
+3, 9150, Note_on_c, 0, 60, 80
+3, 9160, Note_on_c, 0, 64, 74
+3, 9747, Note_off_c, 0, 57, 0
+3, 9750, Note_off_c, 0, 52, 0
+3, 9752, Note_off_c, 0, 60, 0
+3, 9765, Note_off_c, 0, 59, 0
+3, 9794, Note_off_c, 0, 64, 0
+3, 10080, Note_on_c, 0, 52, 79
+3, 10090, Note_on_c, 0, 56, 80
+3, 10100, Note_on_c, 0, 59, 81
+3, 10110, Note_on_c, 0, 60, 80
+3, 10120, Note_on_c, 0, 64, 70
+3, 10552, Note_off_c, 0, 59, 0
+3, 10561, Note_off_c, 0, 60, 0
+3, 10586, Note_off_c, 0, 56, 0
+3, 10599, Note_off_c, 0, 52, 0
+3, 10604, Note_off_c, 0, 64, 0
+3, 10800, Note_on_c, 0, 52, 71
+3, 10810, Note_on_c, 0, 56, 66
+3, 10820, Note_on_c, 0, 59, 65
+3, 10830, Note_on_c, 0, 60, 64
+3, 10840, Note_on_c, 0, 64, 59
+3, 11040, Note_off_c, 0, 64, 0
+3, 11040, Note_on_c, 0, 65, 75
+3, 11280, Note_off_c, 0, 52, 0
+3, 11280, Note_off_c, 0, 56, 0
+3, 11280, Note_off_c, 0, 59, 0
+3, 11280, Note_off_c, 0, 60, 0
+3, 11280, Note_on_c, 0, 64, 68
+3, 11310, Note_off_c, 0, 65, 0
+3, 11520, Note_on_c, 0, 53, 75
+3, 11530, Note_on_c, 0, 55, 80
+3, 11535, Note_off_c, 0, 64, 0
+3, 11540, Note_on_c, 0, 58, 81
+3, 11550, Note_on_c, 0, 62, 77
+3, 12044, Note_off_c, 0, 53, 0
+3, 12058, Note_off_c, 0, 58, 0
+3, 12091, Note_off_c, 0, 55, 0
+3, 12120, Note_off_c, 0, 62, 0
+3, 12240, Note_on_c, 0, 53, 63
+3, 12250, Note_on_c, 0, 55, 71
+3, 12260, Note_on_c, 0, 58, 67
+3, 12270, Note_on_c, 0, 62, 72
+3, 12389, Note_off_c, 0, 55, 0
+3, 12394, Note_off_c, 0, 53, 0
+3, 12400, Note_off_c, 0, 62, 0
+3, 12404, Note_off_c, 0, 58, 0
+3, 12960, Note_on_c, 0, 53, 70
+3, 12970, Note_on_c, 0, 55, 71
+3, 12980, Note_on_c, 0, 58, 82
+3, 12990, Note_on_c, 0, 62, 72
+3, 13200, Note_on_c, 0, 64, 72
+3, 13440, Note_off_c, 0, 53, 0
+3, 13440, Note_off_c, 0, 55, 0
+3, 13440, Note_off_c, 0, 58, 0
+3, 13440, Note_off_c, 0, 62, 0
+3, 13440, Note_off_c, 0, 64, 0
+3, 13440, Note_on_c, 0, 48, 70
+3, 13920, Note_off_c, 0, 48, 0
+3, 13920, Note_on_c, 0, 57, 78
+3, 13930, Note_on_c, 0, 58, 78
+3, 13940, Note_on_c, 0, 62, 91
+3, 13950, Note_on_c, 0, 65, 87
+3, 14338, Note_off_c, 0, 57, 0
+3, 14347, Note_off_c, 0, 62, 0
+3, 14354, Note_off_c, 0, 58, 0
+3, 14425, Note_off_c, 0, 65, 0
+3, 14635, Note_on_c, 0, 56, 77
+3, 14640, Note_on_c, 0, 58, 81
+3, 14650, Note_on_c, 0, 61, 83
+3, 14660, Note_on_c, 0, 64, 82
+3, 15120, Note_off_c, 0, 56, 0
+3, 15121, Note_off_c, 0, 58, 0
+3, 15144, Note_off_c, 0, 61, 0
+3, 15188, Note_off_c, 0, 64, 0
+3, 15360, Note_on_c, 0, 53, 81
+3, 15370, Note_on_c, 0, 57, 65
+3, 15380, Note_on_c, 0, 60, 86
+3, 15390, Note_on_c, 0, 64, 78
+3, 15914, Note_off_c, 0, 57, 0
+3, 15924, Note_off_c, 0, 60, 0
+3, 15937, Note_off_c, 0, 53, 0
+3, 15946, Note_off_c, 0, 64, 0
+3, 16080, Note_on_c, 0, 53, 68
+3, 16090, Note_on_c, 0, 57, 63
+3, 16100, Note_on_c, 0, 60, 75
+3, 16110, Note_on_c, 0, 64, 80
+3, 16153, Note_off_c, 0, 53, 0
+3, 16179, Note_off_c, 0, 60, 0
+3, 16185, Note_off_c, 0, 57, 0
+3, 16224, Note_off_c, 0, 64, 0
+3, 16800, Note_on_c, 0, 53, 77
+3, 16810, Note_on_c, 0, 57, 74
+3, 16820, Note_on_c, 0, 60, 81
+3, 16830, Note_on_c, 0, 64, 83
+3, 17370, Note_off_c, 0, 57, 0
+3, 17432, Note_off_c, 0, 53, 0
+3, 17441, Note_off_c, 0, 60, 0
+3, 17543, Note_off_c, 0, 64, 0
+3, 17760, Note_on_c, 0, 53, 75
+3, 17770, Note_on_c, 0, 57, 62
+3, 17780, Note_on_c, 0, 60, 81
+3, 17790, Note_on_c, 0, 64, 66
+3, 18226, Note_off_c, 0, 53, 0
+3, 18226, Note_off_c, 0, 57, 0
+3, 18254, Note_off_c, 0, 60, 0
+3, 18313, Note_off_c, 0, 64, 0
+3, 18480, Note_on_c, 0, 53, 63
+3, 18490, Note_on_c, 0, 57, 60
+3, 18500, Note_on_c, 0, 60, 71
+3, 18510, Note_on_c, 0, 64, 75
+3, 18884, Note_off_c, 0, 60, 0
+3, 18975, Note_off_c, 0, 57, 0
+3, 18989, Note_off_c, 0, 53, 0
+3, 19042, Note_off_c, 0, 64, 0
+3, 19200, Note_on_c, 0, 52, 74
+3, 19210, Note_on_c, 0, 56, 72
+3, 19220, Note_on_c, 0, 59, 76
+3, 19230, Note_on_c, 0, 63, 80
+3, 19718, Note_off_c, 0, 52, 0
+3, 19730, Note_off_c, 0, 56, 0
+3, 19730, Note_off_c, 0, 59, 0
+3, 19766, Note_off_c, 0, 63, 0
+3, 19920, Note_on_c, 0, 52, 72
+3, 19930, Note_on_c, 0, 56, 65
+3, 19940, Note_on_c, 0, 59, 71
+3, 19950, Note_on_c, 0, 63, 75
+3, 20036, Note_off_c, 0, 56, 0
+3, 20054, Note_off_c, 0, 59, 0
+3, 20075, Note_off_c, 0, 52, 0
+3, 20094, Note_off_c, 0, 63, 0
+3, 20640, Note_on_c, 0, 52, 67
+3, 20650, Note_on_c, 0, 56, 68
+3, 20660, Note_on_c, 0, 59, 77
+3, 20670, Note_on_c, 0, 63, 73
+3, 21250, Note_off_c, 0, 59, 0
+3, 21250, Note_off_c, 0, 56, 0
+3, 21270, Note_off_c, 0, 52, 0
+3, 21336, Note_off_c, 0, 63, 0
+3, 21600, Note_on_c, 0, 53, 68
+3, 21610, Note_on_c, 0, 55, 80
+3, 21620, Note_on_c, 0, 58, 81
+3, 21630, Note_on_c, 0, 61, 80
+3, 22056, Note_off_c, 0, 55, 0
+3, 22080, Note_off_c, 0, 53, 0
+3, 22101, Note_off_c, 0, 58, 0
+3, 22126, Note_off_c, 0, 61, 0
+3, 22320, Note_on_c, 0, 53, 75
+3, 22330, Note_on_c, 0, 55, 63
+3, 22340, Note_on_c, 0, 58, 72
+3, 22350, Note_on_c, 0, 61, 77
+3, 22777, Note_off_c, 0, 53, 0
+3, 22800, Note_off_c, 0, 55, 0
+3, 22800, Note_off_c, 0, 58, 0
+3, 22842, Note_off_c, 0, 61, 0
+3, 23040, Note_on_c, 0, 52, 75
+3, 23050, Note_on_c, 0, 53, 73
+3, 23060, Note_on_c, 0, 57, 84
+3, 23070, Note_on_c, 0, 60, 81
+3, 23520, Note_off_c, 0, 52, 0
+3, 23543, Note_off_c, 0, 57, 0
+3, 23547, Note_off_c, 0, 53, 0
+3, 23575, Note_off_c, 0, 60, 0
+3, 23760, Note_on_c, 0, 52, 80
+3, 23770, Note_on_c, 0, 53, 75
+3, 23780, Note_on_c, 0, 57, 73
+3, 23790, Note_on_c, 0, 60, 80
+3, 23834, Note_off_c, 0, 57, 0
+3, 23854, Note_off_c, 0, 53, 0
+3, 23870, Note_off_c, 0, 52, 0
+3, 23901, Note_off_c, 0, 60, 0
+3, 24480, Note_on_c, 0, 52, 74
+3, 24490, Note_on_c, 0, 53, 70
+3, 24500, Note_on_c, 0, 57, 84
+3, 24510, Note_on_c, 0, 60, 81
+3, 24960, Note_off_c, 0, 52, 0
+3, 24961, Note_off_c, 0, 57, 0
+3, 25009, Note_off_c, 0, 53, 0
+3, 25019, Note_off_c, 0, 60, 0
+3, 25440, Note_on_c, 0, 52, 83
+3, 25450, Note_on_c, 0, 53, 83
+3, 25460, Note_on_c, 0, 57, 86
+3, 25470, Note_on_c, 0, 60, 83
+3, 25884, Note_off_c, 0, 52, 0
+3, 25888, Note_off_c, 0, 53, 0
+3, 25891, Note_off_c, 0, 57, 0
+3, 25940, Note_off_c, 0, 60, 0
+3, 26160, Note_on_c, 0, 50, 83
+3, 26170, Note_on_c, 0, 55, 89
+3, 26180, Note_on_c, 0, 57, 87
+3, 26190, Note_on_c, 0, 62, 89
+3, 26546, Note_off_c, 0, 50, 0
+3, 26590, Note_off_c, 0, 57, 0
+3, 26604, Note_off_c, 0, 55, 0
+3, 26680, Note_off_c, 0, 62, 0
+3, 26680, End_track
+4, 0, Start_track
+4, 0, Title_t, ""
+4, 0, MIDI_port, 0
+4, 0, End_track
+5, 0, Start_track
+5, 0, Title_t, ""
+5, 0, MIDI_port, 0
+5, 0, End_track
+6, 0, Start_track
+6, 0, Title_t, ""
+6, 0, MIDI_port, 0
+6, 0, End_track
+7, 0, Start_track
+7, 0, Title_t, ""
+7, 0, MIDI_port, 0
+7, 0, End_track
+8, 0, Start_track
+8, 0, Title_t, ""
+8, 0, MIDI_port, 0
+8, 0, End_track
+9, 0, Start_track
+9, 0, Title_t, ""
+9, 0, MIDI_port, 0
+9, 0, End_track
+10, 0, Start_track
+10, 0, Title_t, ""
+10, 0, MIDI_port, 0
+10, 0, End_track
+11, 0, Start_track
+11, 0, Title_t, ""
+11, 0, MIDI_port, 0
+11, 0, End_track
+12, 0, Start_track
+12, 0, Title_t, "Rhythm"
+12, 0, MIDI_port, 0
+12, 0, End_track
+13, 0, Start_track
+13, 0, Title_t, ""
+13, 0, MIDI_port, 0
+13, 0, End_track
+14, 0, Start_track
+14, 0, Title_t, ""
+14, 0, MIDI_port, 0
+14, 0, End_track
+15, 0, Start_track
+15, 0, Title_t, ""
+15, 0, MIDI_port, 0
+15, 0, End_track
+16, 0, Start_track
+16, 0, Title_t, ""
+16, 0, MIDI_port, 0
+16, 0, End_track
+17, 0, Start_track
+17, 0, Title_t, ""
+17, 0, MIDI_port, 0
+17, 0, End_track
+18, 0, Start_track
+18, 0, Title_t, ""
+18, 0, MIDI_port, 0
+18, 0, End_track
+0, 0, End_of_file

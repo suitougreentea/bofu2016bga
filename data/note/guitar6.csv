@@ -1,0 +1,721 @@
+0, 0, Header, 1, 18, 960
+1, 0, Start_track
+1, 0, Title_t, ""
+1, 0, Time_signature, 4, 2, 24, 8
+1, 0, End_track
+2, 0, Start_track
+2, 0, Title_t, "System Setup"
+2, 0, MIDI_port, 0
+2, 0, End_track
+3, 0, Start_track
+3, 0, Title_t, ""
+3, 0, MIDI_port, 0
+3, 0, Control_c, 0, 64, 5
+3, 0, Note_on_c, 0, 60, 113
+3, 0, Note_on_c, 0, 63, 107
+3, 0, Note_on_c, 0, 67, 110
+3, 32, Control_c, 0, 64, 5
+3, 62, Control_c, 0, 64, 5
+3, 116, Control_c, 0, 64, 5
+3, 146, Control_c, 0, 64, 5
+3, 176, Control_c, 0, 64, 5
+3, 206, Control_c, 0, 64, 5
+3, 236, Control_c, 0, 64, 5
+3, 266, Control_c, 0, 64, 5
+3, 296, Control_c, 0, 64, 5
+3, 326, Control_c, 0, 64, 5
+3, 356, Control_c, 0, 64, 5
+3, 386, Control_c, 0, 64, 5
+3, 416, Control_c, 0, 64, 5
+3, 446, Control_c, 0, 64, 5
+3, 476, Control_c, 0, 64, 5
+3, 506, Control_c, 0, 64, 5
+3, 564, Control_c, 0, 64, 5
+3, 594, Control_c, 0, 64, 5
+3, 624, Control_c, 0, 64, 5
+3, 634, Control_c, 0, 64, 5
+3, 666, Control_c, 0, 64, 5
+3, 696, Control_c, 0, 64, 5
+3, 720, Note_off_c, 0, 60, 0
+3, 720, Note_off_c, 0, 63, 0
+3, 720, Note_off_c, 0, 67, 0
+3, 720, Note_on_c, 0, 60, 106
+3, 720, Note_on_c, 0, 63, 98
+3, 720, Note_on_c, 0, 67, 108
+3, 726, Control_c, 0, 64, 5
+3, 756, Control_c, 0, 64, 5
+3, 786, Control_c, 0, 64, 5
+3, 816, Control_c, 0, 64, 5
+3, 846, Control_c, 0, 64, 5
+3, 876, Control_c, 0, 64, 5
+3, 906, Control_c, 0, 64, 5
+3, 936, Control_c, 0, 64, 5
+3, 960, Note_off_c, 0, 60, 0
+3, 960, Note_off_c, 0, 63, 0
+3, 960, Note_off_c, 0, 67, 0
+3, 966, Control_c, 0, 64, 5
+3, 996, Control_c, 0, 64, 5
+3, 1026, Control_c, 0, 64, 5
+3, 1056, Control_c, 0, 64, 5
+3, 1086, Control_c, 0, 64, 5
+3, 2400, Note_on_c, 0, 62, 112
+3, 2400, Note_on_c, 0, 65, 112
+3, 2400, Note_on_c, 0, 70, 112
+3, 2461, Control_c, 0, 64, 8
+3, 2468, Control_c, 0, 64, 8
+3, 2474, Control_c, 0, 64, 8
+3, 2504, Control_c, 0, 64, 8
+3, 2534, Control_c, 0, 64, 8
+3, 2564, Control_c, 0, 64, 8
+3, 2594, Control_c, 0, 64, 8
+3, 2624, Control_c, 0, 64, 8
+3, 3637, Control_c, 0, 64, 16
+3, 3672, Control_c, 0, 64, 16
+3, 3693, Control_c, 0, 64, 16
+3, 3699, Control_c, 0, 64, 16
+3, 3729, Control_c, 0, 64, 16
+3, 3759, Control_c, 0, 64, 16
+3, 3807, Control_c, 0, 64, 16
+3, 3837, Control_c, 0, 64, 16
+3, 3840, Note_off_c, 0, 62, 0
+3, 3840, Note_off_c, 0, 65, 0
+3, 3840, Note_off_c, 0, 70, 0
+3, 3840, Note_on_c, 0, 62, 101
+3, 3840, Note_on_c, 0, 63, 92
+3, 3840, Note_on_c, 0, 67, 105
+3, 3840, Note_on_c, 0, 70, 107
+3, 3867, Control_c, 0, 64, 16
+3, 3897, Control_c, 0, 64, 16
+3, 3931, Control_c, 0, 64, 16
+3, 3944, Control_c, 0, 64, 16
+3, 3962, Control_c, 0, 64, 16
+3, 3972, Control_c, 0, 64, 16
+3, 3987, Control_c, 0, 64, 16
+3, 4001, Control_c, 0, 64, 16
+3, 4015, Control_c, 0, 64, 16
+3, 4045, Control_c, 0, 64, 16
+3, 4075, Control_c, 0, 64, 16
+3, 4105, Control_c, 0, 64, 16
+3, 4135, Control_c, 0, 64, 16
+3, 4165, Control_c, 0, 64, 16
+3, 4195, Control_c, 0, 64, 16
+3, 4225, Control_c, 0, 64, 16
+3, 4255, Control_c, 0, 64, 16
+3, 4285, Control_c, 0, 64, 16
+3, 4315, Control_c, 0, 64, 16
+3, 4345, Control_c, 0, 64, 16
+3, 4375, Control_c, 0, 64, 16
+3, 4405, Control_c, 0, 64, 16
+3, 4435, Control_c, 0, 64, 16
+3, 4465, Control_c, 0, 64, 16
+3, 4507, Control_c, 0, 64, 16
+3, 4537, Control_c, 0, 64, 16
+3, 4560, Note_off_c, 0, 62, 0
+3, 4560, Note_off_c, 0, 63, 0
+3, 4560, Note_off_c, 0, 67, 0
+3, 4560, Note_off_c, 0, 70, 0
+3, 4560, Note_on_c, 0, 62, 99
+3, 4560, Note_on_c, 0, 63, 85
+3, 4560, Note_on_c, 0, 67, 104
+3, 4560, Note_on_c, 0, 70, 104
+3, 4567, Control_c, 0, 64, 16
+3, 4597, Control_c, 0, 64, 16
+3, 4645, Control_c, 0, 64, 16
+3, 4657, Control_c, 0, 64, 16
+3, 4664, Control_c, 0, 64, 16
+3, 4694, Control_c, 0, 64, 16
+3, 4724, Control_c, 0, 64, 16
+3, 4754, Control_c, 0, 64, 16
+3, 4784, Control_c, 0, 64, 16
+3, 4800, Note_off_c, 0, 62, 0
+3, 4800, Note_off_c, 0, 63, 0
+3, 4800, Note_off_c, 0, 67, 0
+3, 4800, Note_off_c, 0, 70, 0
+3, 4814, Control_c, 0, 64, 16
+3, 4844, Control_c, 0, 64, 16
+3, 4874, Control_c, 0, 64, 16
+3, 4904, Control_c, 0, 64, 16
+3, 4934, Control_c, 0, 64, 16
+3, 4964, Control_c, 0, 64, 16
+3, 4994, Control_c, 0, 64, 16
+3, 6240, Note_on_c, 0, 61, 107
+3, 6240, Note_on_c, 0, 65, 106
+3, 6240, Note_on_c, 0, 68, 107
+3, 6480, Note_off_c, 0, 61, 0
+3, 6480, Note_off_c, 0, 65, 0
+3, 6480, Note_off_c, 0, 68, 0
+3, 6960, Note_on_c, 0, 61, 106
+3, 6960, Note_on_c, 0, 64, 106
+3, 6960, Note_on_c, 0, 68, 107
+3, 6978, Control_c, 0, 64, 26
+3, 7008, Control_c, 0, 64, 26
+3, 7038, Control_c, 0, 64, 26
+3, 7082, Control_c, 0, 64, 26
+3, 7088, Control_c, 0, 64, 26
+3, 7097, Control_c, 0, 64, 26
+3, 7127, Control_c, 0, 64, 26
+3, 7157, Control_c, 0, 64, 26
+3, 7187, Control_c, 0, 64, 26
+3, 7217, Control_c, 0, 64, 26
+3, 7247, Control_c, 0, 64, 26
+3, 7277, Control_c, 0, 64, 26
+3, 7307, Control_c, 0, 64, 26
+3, 7337, Control_c, 0, 64, 26
+3, 7367, Control_c, 0, 64, 26
+3, 7397, Control_c, 0, 64, 26
+3, 7427, Control_c, 0, 64, 26
+3, 7457, Control_c, 0, 64, 26
+3, 7487, Control_c, 0, 64, 26
+3, 7517, Control_c, 0, 64, 26
+3, 7547, Control_c, 0, 64, 26
+3, 7577, Control_c, 0, 64, 26
+3, 7607, Control_c, 0, 64, 25
+3, 7637, Control_c, 0, 64, 24
+3, 7667, Control_c, 0, 64, 23
+3, 7680, Note_off_c, 0, 61, 0
+3, 7680, Note_off_c, 0, 64, 0
+3, 7680, Note_off_c, 0, 68, 0
+3, 7680, Note_on_c, 0, 60, 104
+3, 7680, Note_on_c, 0, 63, 95
+3, 7680, Note_on_c, 0, 67, 105
+3, 7722, Control_c, 0, 64, 22
+3, 7731, Control_c, 0, 64, 21
+3, 7751, Control_c, 0, 64, 21
+3, 7761, Control_c, 0, 64, 21
+3, 7776, Control_c, 0, 64, 20
+3, 7787, Control_c, 0, 64, 20
+3, 7804, Control_c, 0, 64, 20
+3, 7817, Control_c, 0, 64, 20
+3, 7847, Control_c, 0, 64, 19
+3, 7877, Control_c, 0, 64, 19
+3, 8400, Note_off_c, 0, 60, 0
+3, 8400, Note_off_c, 0, 63, 0
+3, 8400, Note_off_c, 0, 67, 0
+3, 8400, Note_on_c, 0, 60, 102
+3, 8400, Note_on_c, 0, 63, 84
+3, 8400, Note_on_c, 0, 67, 91
+3, 8528, Control_c, 0, 64, 25
+3, 8544, Control_c, 0, 64, 25
+3, 8574, Control_c, 0, 64, 25
+3, 8604, Control_c, 0, 64, 25
+3, 8634, Control_c, 0, 64, 25
+3, 8640, Note_off_c, 0, 60, 0
+3, 8640, Note_off_c, 0, 63, 0
+3, 8640, Note_off_c, 0, 67, 0
+3, 8664, Control_c, 0, 64, 25
+3, 8694, Control_c, 0, 64, 25
+3, 8724, Control_c, 0, 64, 25
+3, 10080, Note_on_c, 0, 59, 106
+3, 10080, Note_on_c, 0, 62, 106
+3, 10080, Note_on_c, 0, 65, 105
+3, 10080, Note_on_c, 0, 70, 112
+3, 10107, Control_c, 0, 64, 23
+3, 10137, Control_c, 0, 64, 23
+3, 10167, Control_c, 0, 64, 23
+3, 10205, Control_c, 0, 64, 23
+3, 10212, Control_c, 0, 64, 23
+3, 10223, Control_c, 0, 64, 23
+3, 10236, Control_c, 0, 64, 23
+3, 10252, Control_c, 0, 64, 23
+3, 10282, Control_c, 0, 64, 23
+3, 10312, Control_c, 0, 64, 23
+3, 10342, Control_c, 0, 64, 23
+3, 10372, Control_c, 0, 64, 23
+3, 10402, Control_c, 0, 64, 23
+3, 10432, Control_c, 0, 64, 23
+3, 10462, Control_c, 0, 64, 23
+3, 10492, Control_c, 0, 64, 23
+3, 10522, Control_c, 0, 64, 23
+3, 10552, Control_c, 0, 64, 23
+3, 10582, Control_c, 0, 64, 23
+3, 10612, Control_c, 0, 64, 23
+3, 10642, Control_c, 0, 64, 23
+3, 10672, Control_c, 0, 64, 23
+3, 10702, Control_c, 0, 64, 23
+3, 10732, Control_c, 0, 64, 23
+3, 10762, Control_c, 0, 64, 23
+3, 10792, Control_c, 0, 64, 23
+3, 10822, Control_c, 0, 64, 23
+3, 10852, Control_c, 0, 64, 23
+3, 10882, Control_c, 0, 64, 23
+3, 10912, Control_c, 0, 64, 23
+3, 10942, Control_c, 0, 64, 23
+3, 10972, Control_c, 0, 64, 23
+3, 11002, Control_c, 0, 64, 23
+3, 11032, Control_c, 0, 64, 23
+3, 11062, Control_c, 0, 64, 23
+3, 11092, Control_c, 0, 64, 23
+3, 11122, Control_c, 0, 64, 23
+3, 11152, Control_c, 0, 64, 23
+3, 11182, Control_c, 0, 64, 23
+3, 11212, Control_c, 0, 64, 23
+3, 11321, Control_c, 0, 64, 23
+3, 11351, Control_c, 0, 64, 23
+3, 11395, Control_c, 0, 64, 23
+3, 11412, Control_c, 0, 64, 23
+3, 11425, Control_c, 0, 64, 23
+3, 11439, Control_c, 0, 64, 23
+3, 11452, Control_c, 0, 64, 23
+3, 11464, Control_c, 0, 64, 23
+3, 11494, Control_c, 0, 64, 23
+3, 11520, Note_off_c, 0, 59, 0
+3, 11520, Note_off_c, 0, 62, 0
+3, 11520, Note_off_c, 0, 65, 0
+3, 11520, Note_off_c, 0, 70, 0
+3, 11520, Note_on_c, 0, 63, 101
+3, 11520, Note_on_c, 0, 67, 106
+3, 11520, Note_on_c, 0, 70, 93
+3, 11520, Note_on_c, 0, 74, 93
+3, 11524, Control_c, 0, 64, 23
+3, 11554, Control_c, 0, 64, 23
+3, 11584, Control_c, 0, 64, 23
+3, 11639, Control_c, 0, 64, 23
+3, 11657, Control_c, 0, 64, 23
+3, 11668, Control_c, 0, 64, 23
+3, 11682, Control_c, 0, 64, 23
+3, 11693, Control_c, 0, 64, 23
+3, 11710, Control_c, 0, 64, 23
+3, 11719, Control_c, 0, 64, 23
+3, 11736, Control_c, 0, 64, 23
+3, 11753, Control_c, 0, 64, 23
+3, 11783, Control_c, 0, 64, 23
+3, 11813, Control_c, 0, 64, 23
+3, 11843, Control_c, 0, 64, 23
+3, 11873, Control_c, 0, 64, 23
+3, 11903, Control_c, 0, 64, 23
+3, 11933, Control_c, 0, 64, 23
+3, 11963, Control_c, 0, 64, 23
+3, 11993, Control_c, 0, 64, 23
+3, 12023, Control_c, 0, 64, 23
+3, 12053, Control_c, 0, 64, 23
+3, 12199, Control_c, 0, 64, 14
+3, 12229, Control_c, 0, 64, 14
+3, 12240, Note_off_c, 0, 63, 0
+3, 12240, Note_off_c, 0, 67, 0
+3, 12240, Note_off_c, 0, 70, 0
+3, 12240, Note_off_c, 0, 74, 0
+3, 12240, Note_on_c, 0, 63, 101
+3, 12240, Note_on_c, 0, 67, 98
+3, 12240, Note_on_c, 0, 70, 86
+3, 12240, Note_on_c, 0, 74, 93
+3, 12259, Control_c, 0, 64, 14
+3, 12289, Control_c, 0, 64, 14
+3, 12342, Control_c, 0, 64, 14
+3, 12350, Control_c, 0, 64, 14
+3, 12360, Control_c, 0, 64, 14
+3, 12378, Control_c, 0, 64, 14
+3, 12408, Control_c, 0, 64, 14
+3, 12438, Control_c, 0, 64, 14
+3, 12468, Control_c, 0, 64, 14
+3, 12480, Note_off_c, 0, 63, 0
+3, 12480, Note_off_c, 0, 67, 0
+3, 12480, Note_off_c, 0, 70, 0
+3, 12480, Note_off_c, 0, 74, 0
+3, 12498, Control_c, 0, 64, 14
+3, 12528, Control_c, 0, 64, 14
+3, 12558, Control_c, 0, 64, 14
+3, 13440, Note_on_c, 0, 61, 105
+3, 13440, Note_on_c, 0, 65, 108
+3, 13440, Note_on_c, 0, 72, 103
+3, 13556, Control_c, 0, 64, 8
+3, 13586, Control_c, 0, 64, 7
+3, 13643, Control_c, 0, 64, 7
+3, 13653, Control_c, 0, 64, 7
+3, 13659, Control_c, 0, 64, 7
+3, 13669, Control_c, 0, 64, 7
+3, 13699, Control_c, 0, 64, 7
+3, 13729, Control_c, 0, 64, 7
+3, 13759, Control_c, 0, 64, 7
+3, 13789, Control_c, 0, 64, 7
+3, 13819, Control_c, 0, 64, 7
+3, 13849, Control_c, 0, 64, 7
+3, 13879, Control_c, 0, 64, 7
+3, 13909, Control_c, 0, 64, 7
+3, 13939, Control_c, 0, 64, 7
+3, 13969, Control_c, 0, 64, 7
+3, 13999, Control_c, 0, 64, 7
+3, 14029, Control_c, 0, 64, 7
+3, 14059, Control_c, 0, 64, 6
+3, 14089, Control_c, 0, 64, 6
+3, 14119, Control_c, 0, 64, 6
+3, 14149, Control_c, 0, 64, 6
+3, 14179, Control_c, 0, 64, 6
+3, 14209, Control_c, 0, 64, 6
+3, 14239, Control_c, 0, 64, 5
+3, 14269, Control_c, 0, 64, 5
+3, 14299, Control_c, 0, 64, 5
+3, 14329, Control_c, 0, 64, 5
+3, 14359, Control_c, 0, 64, 5
+3, 14389, Control_c, 0, 64, 5
+3, 14400, Note_off_c, 0, 61, 0
+3, 14400, Note_off_c, 0, 65, 0
+3, 14400, Note_off_c, 0, 72, 0
+3, 14400, Note_on_c, 0, 61, 108
+3, 14400, Note_on_c, 0, 64, 96
+3, 14400, Note_on_c, 0, 67, 106
+3, 14419, Control_c, 0, 64, 5
+3, 14449, Control_c, 0, 64, 5
+3, 14479, Control_c, 0, 64, 5
+3, 14509, Control_c, 0, 64, 5
+3, 14539, Control_c, 0, 64, 5
+3, 14594, Control_c, 0, 64, 5
+3, 14609, Control_c, 0, 64, 5
+3, 14620, Control_c, 0, 64, 5
+3, 14637, Control_c, 0, 64, 5
+3, 14646, Control_c, 0, 64, 5
+3, 14663, Control_c, 0, 64, 5
+3, 14680, Control_c, 0, 64, 5
+3, 14710, Control_c, 0, 64, 5
+3, 14740, Control_c, 0, 64, 5
+3, 14770, Control_c, 0, 64, 5
+3, 14800, Control_c, 0, 64, 5
+3, 14830, Control_c, 0, 64, 7
+3, 14860, Control_c, 0, 64, 7
+3, 15360, Note_off_c, 0, 61, 0
+3, 15360, Note_off_c, 0, 64, 0
+3, 15360, Note_off_c, 0, 67, 0
+3, 15360, Control_c, 0, 64, 0
+3, 15360, Note_on_c, 0, 60, 106
+3, 15360, Note_on_c, 0, 63, 107
+3, 15360, Note_on_c, 0, 67, 109
+3, 15505, Control_c, 0, 64, 7
+3, 15535, Control_c, 0, 64, 7
+3, 15565, Control_c, 0, 64, 7
+3, 15600, Control_c, 0, 64, 7
+3, 15630, Control_c, 0, 64, 7
+3, 15660, Control_c, 0, 64, 7
+3, 15690, Control_c, 0, 64, 7
+3, 15720, Control_c, 0, 64, 7
+3, 15750, Control_c, 0, 64, 7
+3, 15780, Control_c, 0, 64, 7
+3, 15810, Control_c, 0, 64, 7
+3, 15840, Control_c, 0, 64, 7
+3, 15870, Control_c, 0, 64, 7
+3, 15900, Control_c, 0, 64, 7
+3, 15930, Control_c, 0, 64, 7
+3, 15960, Control_c, 0, 64, 7
+3, 15990, Control_c, 0, 64, 7
+3, 16020, Control_c, 0, 64, 7
+3, 16050, Control_c, 0, 64, 7
+3, 16080, Note_off_c, 0, 60, 0
+3, 16080, Note_off_c, 0, 63, 0
+3, 16080, Note_off_c, 0, 67, 0
+3, 16080, Note_on_c, 0, 60, 107
+3, 16080, Note_on_c, 0, 63, 95
+3, 16080, Note_on_c, 0, 67, 106
+3, 16089, Control_c, 0, 64, 7
+3, 16103, Control_c, 0, 64, 7
+3, 16115, Control_c, 0, 64, 7
+3, 16131, Control_c, 0, 64, 7
+3, 16161, Control_c, 0, 64, 7
+3, 16191, Control_c, 0, 64, 7
+3, 16221, Control_c, 0, 64, 7
+3, 16251, Control_c, 0, 64, 7
+3, 16281, Control_c, 0, 64, 7
+3, 16311, Control_c, 0, 64, 7
+3, 16320, Note_off_c, 0, 60, 0
+3, 16320, Note_off_c, 0, 63, 0
+3, 16320, Note_off_c, 0, 67, 0
+3, 16341, Control_c, 0, 64, 7
+3, 16371, Control_c, 0, 64, 7
+3, 16401, Control_c, 0, 64, 7
+3, 16431, Control_c, 0, 64, 7
+3, 16461, Control_c, 0, 64, 7
+3, 16491, Control_c, 0, 64, 7
+3, 17638, Control_c, 0, 64, 15
+3, 17668, Control_c, 0, 64, 15
+3, 17698, Control_c, 0, 64, 15
+3, 17728, Control_c, 0, 64, 15
+3, 17760, Note_on_c, 0, 59, 105
+3, 17760, Note_on_c, 0, 62, 104
+3, 17760, Note_on_c, 0, 65, 99
+3, 17760, Note_on_c, 0, 70, 110
+3, 17773, Control_c, 0, 64, 15
+3, 17791, Control_c, 0, 64, 15
+3, 17821, Control_c, 0, 64, 15
+3, 17851, Control_c, 0, 64, 15
+3, 17881, Control_c, 0, 64, 15
+3, 17911, Control_c, 0, 64, 15
+3, 17941, Control_c, 0, 64, 15
+3, 17971, Control_c, 0, 64, 15
+3, 18001, Control_c, 0, 64, 15
+3, 18031, Control_c, 0, 64, 15
+3, 18061, Control_c, 0, 64, 15
+3, 18091, Control_c, 0, 64, 15
+3, 18121, Control_c, 0, 64, 15
+3, 18151, Control_c, 0, 64, 15
+3, 18181, Control_c, 0, 64, 15
+3, 18211, Control_c, 0, 64, 15
+3, 18241, Control_c, 0, 64, 15
+3, 18271, Control_c, 0, 64, 15
+3, 18301, Control_c, 0, 64, 15
+3, 18331, Control_c, 0, 64, 15
+3, 18361, Control_c, 0, 64, 15
+3, 18391, Control_c, 0, 64, 15
+3, 18421, Control_c, 0, 64, 15
+3, 18451, Control_c, 0, 64, 15
+3, 18481, Control_c, 0, 64, 15
+3, 18511, Control_c, 0, 64, 15
+3, 18541, Control_c, 0, 64, 15
+3, 18571, Control_c, 0, 64, 15
+3, 18601, Control_c, 0, 64, 15
+3, 18631, Control_c, 0, 64, 15
+3, 18661, Control_c, 0, 64, 14
+3, 18691, Control_c, 0, 64, 14
+3, 18721, Control_c, 0, 64, 14
+3, 18751, Control_c, 0, 64, 13
+3, 18781, Control_c, 0, 64, 13
+3, 18811, Control_c, 0, 64, 12
+3, 18841, Control_c, 0, 64, 12
+3, 18871, Control_c, 0, 64, 11
+3, 18901, Control_c, 0, 64, 11
+3, 18931, Control_c, 0, 64, 10
+3, 18961, Control_c, 0, 64, 10
+3, 18991, Control_c, 0, 64, 9
+3, 19040, Control_c, 0, 64, 9
+3, 19063, Control_c, 0, 64, 8
+3, 19071, Control_c, 0, 64, 8
+3, 19081, Control_c, 0, 64, 8
+3, 19111, Control_c, 0, 64, 7
+3, 19141, Control_c, 0, 64, 7
+3, 19171, Control_c, 0, 64, 6
+3, 19200, Note_off_c, 0, 59, 0
+3, 19200, Note_off_c, 0, 62, 0
+3, 19200, Note_off_c, 0, 65, 0
+3, 19200, Note_off_c, 0, 70, 0
+3, 19200, Note_on_c, 0, 63, 95
+3, 19200, Note_on_c, 0, 67, 105
+3, 19200, Note_on_c, 0, 70, 107
+3, 19201, Control_c, 0, 64, 6
+3, 19231, Control_c, 0, 64, 5
+3, 19261, Control_c, 0, 64, 5
+3, 19291, Control_c, 0, 64, 4
+3, 19920, Note_off_c, 0, 63, 0
+3, 19920, Note_off_c, 0, 67, 0
+3, 19920, Note_off_c, 0, 70, 0
+3, 19920, Note_on_c, 0, 62, 90
+3, 19920, Note_on_c, 0, 66, 98
+3, 19920, Note_on_c, 0, 69, 106
+3, 20640, Note_off_c, 0, 62, 0
+3, 20640, Note_off_c, 0, 66, 0
+3, 20640, Note_off_c, 0, 69, 0
+3, 20640, Note_on_c, 0, 61, 94
+3, 20640, Note_on_c, 0, 65, 86
+3, 20640, Note_on_c, 0, 68, 110
+3, 21360, Note_off_c, 0, 61, 0
+3, 21360, Note_off_c, 0, 65, 0
+3, 21360, Note_off_c, 0, 68, 0
+3, 21360, Note_on_c, 0, 61, 91
+3, 21360, Note_on_c, 0, 63, 93
+3, 21360, Note_on_c, 0, 67, 100
+3, 22080, Note_off_c, 0, 61, 0
+3, 22080, Note_off_c, 0, 63, 0
+3, 22080, Note_off_c, 0, 67, 0
+3, 22080, Note_on_c, 0, 58, 93
+3, 22080, Note_on_c, 0, 60, 91
+3, 22080, Note_on_c, 0, 65, 112
+3, 22560, Note_on_c, 0, 63, 108
+3, 22560, Note_on_c, 0, 67, 108
+3, 23040, Note_off_c, 0, 58, 0
+3, 23040, Note_off_c, 0, 60, 0
+3, 23040, Note_off_c, 0, 65, 0
+3, 23040, Note_off_c, 0, 63, 0
+3, 23040, Note_off_c, 0, 67, 0
+3, 23040, Note_on_c, 0, 60, 108
+3, 23040, Note_on_c, 0, 63, 104
+3, 23040, Note_on_c, 0, 68, 97
+3, 23520, Note_off_c, 0, 60, 0
+3, 23520, Note_off_c, 0, 63, 0
+3, 23520, Note_off_c, 0, 68, 0
+3, 23520, Note_on_c, 0, 60, 101
+3, 23520, Note_on_c, 0, 63, 87
+3, 23520, Note_on_c, 0, 68, 99
+3, 23760, Note_off_c, 0, 60, 0
+3, 23760, Note_off_c, 0, 63, 0
+3, 23760, Note_off_c, 0, 68, 0
+3, 24240, Note_on_c, 0, 53, 92
+3, 24240, Note_on_c, 0, 56, 98
+3, 24240, Note_on_c, 0, 60, 107
+3, 24240, Note_on_c, 0, 67, 109
+3, 24720, Note_off_c, 0, 53, 0
+3, 24720, Note_off_c, 0, 56, 0
+3, 24720, Note_off_c, 0, 60, 0
+3, 24720, Note_off_c, 0, 67, 0
+3, 24720, Note_on_c, 0, 56, 106
+3, 24720, Note_on_c, 0, 60, 102
+3, 24720, Note_on_c, 0, 63, 104
+3, 24832, Control_c, 0, 64, 2
+3, 24862, Control_c, 0, 64, 2
+3, 24892, Control_c, 0, 64, 2
+3, 24924, Control_c, 0, 64, 2
+3, 24940, Control_c, 0, 64, 2
+3, 24950, Control_c, 0, 64, 2
+3, 24965, Control_c, 0, 64, 2
+3, 24982, Control_c, 0, 64, 2
+3, 24993, Control_c, 0, 64, 2
+3, 25006, Control_c, 0, 64, 2
+3, 25025, Control_c, 0, 64, 2
+3, 25033, Control_c, 0, 64, 2
+3, 25052, Control_c, 0, 64, 2
+3, 25075, Control_c, 0, 64, 2
+3, 25088, Control_c, 0, 64, 2
+3, 25119, Control_c, 0, 64, 2
+3, 25129, Control_c, 0, 64, 2
+3, 25157, Control_c, 0, 64, 2
+3, 25171, Control_c, 0, 64, 2
+3, 25201, Control_c, 0, 64, 2
+3, 25231, Control_c, 0, 64, 2
+3, 25261, Control_c, 0, 64, 2
+3, 25291, Control_c, 0, 64, 2
+3, 25321, Control_c, 0, 64, 2
+3, 25351, Control_c, 0, 64, 2
+3, 25381, Control_c, 0, 64, 2
+3, 25411, Control_c, 0, 64, 2
+3, 25440, Note_off_c, 0, 56, 0
+3, 25440, Note_off_c, 0, 60, 0
+3, 25440, Note_off_c, 0, 63, 0
+3, 25440, Note_on_c, 0, 56, 90
+3, 25440, Note_on_c, 0, 60, 96
+3, 25440, Note_on_c, 0, 63, 87
+3, 25441, Control_c, 0, 64, 2
+3, 25471, Control_c, 0, 64, 2
+3, 25501, Control_c, 0, 64, 1
+3, 25531, Control_c, 0, 64, 1
+3, 25561, Control_c, 0, 64, 0
+3, 25591, Control_c, 0, 64, 0
+3, 25621, Control_c, 0, 64, 0
+3, 25651, Control_c, 0, 64, 0
+3, 25681, Control_c, 0, 64, 0
+3, 25711, Control_c, 0, 64, 0
+3, 25741, Control_c, 0, 64, 0
+3, 25771, Control_c, 0, 64, 0
+3, 25801, Control_c, 0, 64, 0
+3, 25831, Control_c, 0, 64, 0
+3, 25861, Control_c, 0, 64, 0
+3, 25891, Control_c, 0, 64, 0
+3, 25920, Note_off_c, 0, 56, 0
+3, 25920, Note_off_c, 0, 60, 0
+3, 25920, Note_off_c, 0, 63, 0
+3, 25920, Note_on_c, 0, 56, 92
+3, 25920, Note_on_c, 0, 62, 101
+3, 25920, Note_on_c, 0, 65, 104
+3, 25921, Control_c, 0, 64, 0
+3, 25951, Control_c, 0, 64, 0
+3, 25981, Control_c, 0, 64, 0
+3, 26021, Control_c, 0, 64, 0
+3, 26039, Control_c, 0, 64, 0
+3, 26054, Control_c, 0, 64, 0
+3, 26061, Control_c, 0, 64, 0
+3, 26084, Control_c, 0, 64, 0
+3, 26114, Control_c, 0, 64, 0
+3, 26144, Control_c, 0, 64, 0
+3, 26174, Control_c, 0, 64, 0
+3, 26204, Control_c, 0, 64, 0
+3, 26234, Control_c, 0, 64, 0
+3, 26400, Note_off_c, 0, 56, 0
+3, 26400, Note_off_c, 0, 62, 0
+3, 26400, Note_off_c, 0, 65, 0
+3, 26400, Note_on_c, 0, 56, 76
+3, 26400, Note_on_c, 0, 62, 87
+3, 26400, Note_on_c, 0, 65, 90
+3, 26880, Note_off_c, 0, 56, 0
+3, 26880, Note_off_c, 0, 62, 0
+3, 26880, Note_off_c, 0, 65, 0
+3, 26880, Note_on_c, 0, 55, 96
+3, 26880, Note_on_c, 0, 58, 93
+3, 26880, Note_on_c, 0, 62, 106
+3, 26880, Note_on_c, 0, 65, 103
+3, 27120, Note_off_c, 0, 55, 0
+3, 27120, Note_off_c, 0, 58, 0
+3, 27120, Note_off_c, 0, 62, 0
+3, 27120, Note_off_c, 0, 65, 0
+3, 27360, Note_on_c, 0, 55, 90
+3, 27360, Note_on_c, 0, 58, 88
+3, 27360, Note_on_c, 0, 62, 93
+3, 27360, Note_on_c, 0, 65, 112
+3, 27600, Note_off_c, 0, 55, 0
+3, 27600, Note_off_c, 0, 58, 0
+3, 27600, Note_off_c, 0, 62, 0
+3, 27600, Note_off_c, 0, 65, 0
+3, 28080, Note_on_c, 0, 55, 96
+3, 28080, Note_on_c, 0, 58, 95
+3, 28080, Note_on_c, 0, 62, 96
+3, 28080, Note_on_c, 0, 65, 102
+3, 28320, Note_off_c, 0, 55, 0
+3, 28320, Note_off_c, 0, 58, 0
+3, 28320, Note_off_c, 0, 62, 0
+3, 28320, Note_off_c, 0, 65, 0
+3, 28800, Note_on_c, 0, 55, 92
+3, 28800, Note_on_c, 0, 58, 103
+3, 28800, Note_on_c, 0, 62, 104
+3, 28800, Note_on_c, 0, 65, 100
+3, 30375, Control_c, 0, 64, 124
+3, 30382, Control_c, 0, 64, 113
+3, 30400, Control_c, 0, 64, 56
+3, 30407, Control_c, 0, 64, 0
+3, 31200, Note_off_c, 0, 55, 0
+3, 31200, Note_off_c, 0, 58, 0
+3, 31200, Note_off_c, 0, 62, 0
+3, 31200, Note_off_c, 0, 65, 0
+3, 31200, End_track
+4, 0, Start_track
+4, 0, Title_t, ""
+4, 0, MIDI_port, 0
+4, 0, End_track
+5, 0, Start_track
+5, 0, Title_t, ""
+5, 0, MIDI_port, 0
+5, 0, End_track
+6, 0, Start_track
+6, 0, Title_t, ""
+6, 0, MIDI_port, 0
+6, 0, End_track
+7, 0, Start_track
+7, 0, Title_t, ""
+7, 0, MIDI_port, 0
+7, 0, End_track
+8, 0, Start_track
+8, 0, Title_t, ""
+8, 0, MIDI_port, 0
+8, 0, End_track
+9, 0, Start_track
+9, 0, Title_t, ""
+9, 0, MIDI_port, 0
+9, 0, End_track
+10, 0, Start_track
+10, 0, Title_t, ""
+10, 0, MIDI_port, 0
+10, 0, End_track
+11, 0, Start_track
+11, 0, Title_t, ""
+11, 0, MIDI_port, 0
+11, 0, End_track
+12, 0, Start_track
+12, 0, Title_t, "Rhythm"
+12, 0, MIDI_port, 0
+12, 0, End_track
+13, 0, Start_track
+13, 0, Title_t, ""
+13, 0, MIDI_port, 0
+13, 0, End_track
+14, 0, Start_track
+14, 0, Title_t, ""
+14, 0, MIDI_port, 0
+14, 0, End_track
+15, 0, Start_track
+15, 0, Title_t, ""
+15, 0, MIDI_port, 0
+15, 0, End_track
+16, 0, Start_track
+16, 0, Title_t, ""
+16, 0, MIDI_port, 0
+16, 0, End_track
+17, 0, Start_track
+17, 0, Title_t, ""
+17, 0, MIDI_port, 0
+17, 0, End_track
+18, 0, Start_track
+18, 0, Title_t, ""
+18, 0, MIDI_port, 0
+18, 0, End_track
+0, 0, End_of_file

@@ -1,222 +1,207 @@
 package io.github.suitougreentea.bofu2016bga
 
 import processing.core.PApplet.*
+import processing.core.PConstants
 import processing.core.PConstants.*
 import processing.core.PGraphics
-import processing.core.PVector
-import java.util.*
 
-class Scene3(app: Main) : Scene2345(app, 1) {
-  override val scroll1 = Pair(startBeat + 0f, startBeat + 16f)
-  override val scroll2 = Pair(startBeat + 15f, startBeat + 30f)
+class Scene3(app: Main): Scene {
+  override val startBeat = 4f + 32f + 32f
 
-  /**
-   *  @
-   *   @
-   * @
-   *
-   *   @
-   * @
-   *  @
-   *
-   * @
-   *
-   *   @
-   */
-  val blink1 = arrayOf(
-          arrayOf(Pair(4, 0), Pair(3, 2), Pair(2, 1)),
-          arrayOf(Pair(4, 1), Pair(3, 0), Pair(2, 2)),
-          arrayOf(Pair(4, 2), Pair(2, 0))
-  )
+  val wid = 60f
 
-  /**
-   * @
-   *   @
-   *  @
-   *
-   *  @
-   * @
-   *   @
-   *
-   *    @
-   *
-   * @
-   */
-  val blink2 = arrayOf(
-          arrayOf(Pair(4, 2), Pair(3, 0), Pair(2, 1)),
-          arrayOf(Pair(4, 1), Pair(3, 2), Pair(2, 0)),
-          arrayOf(Pair(4, 0), Pair(2, 2))
-  )
+  val hei = 52f
 
-  val beat30 = app.beatToFrame(startBeat + 30f).toInt()
+  val column = 32
 
-  var panelState: List<List<Triple<PVector, PVector, PVector>>> = Array(3, { Array(3, { Triple(PVector(0f, 0f, 0f), PVector(0f, 0f, 0f), PVector(0f, 0f, 0f)) }).toList() }).toList()
+  val states = Array(5, {
+    when(it) {
+      0 -> State(Notes3.sax)
+      1 -> State(Notes3.bass)
+      2 -> State(Notes3.piano)
+      3 -> State(Notes3.guitar1)
+      4 -> State(Notes3.guitar2)
+      else -> throw IllegalStateException()
+    }
+  })
 
-  fun draw(app: Main, frame: Int, beat: Float) {
-    if(beat !in startBeat - 1f..startBeat + 33f) return
-    updateBuffer(app, frame, beat)
+  val cymbal = arrayOf(0f, 15f, 16f, 27f, 28f, 30f)
+  val kick = (0..5).map { i -> listOf(0f, 0.75f, 1.5f, 2.5f, 3.25f).map { it + i * 4f } }.flatten() +
+          listOf(0f, 0.75f, 1.5f, 2.5f, 3.25f, 3.5f, 4f, 4.3333333f, 4.66666666f, 5.3333333f, 5.6666666f, 6f).map { it + 24f }
+  val brush = (0..13).map { i -> i * 2f + 1f } + listOf(0f, 0.3333333f, 0.666666666f, 1.333333333f, 1.666666666f, 2f).map { it + 28f }
+
+  val graph = app.createGraphics(1280, 720)
+
+  var triState = Array(15, { Array(23, { mutableListOf(0f, 0f, 0f) } ) })
+
+  override fun draw(app: Main, frame: Int, beat: Float) {
+    val bnorm = createBNorm(app, beat)
+    val bnorm1 = createBNorm1(app, beat)
+    val bin = createBIn(app, beat)
+
+    if(!bin(0f, 32f + 3f)) return
 
     with(app) {
-      when {
-        beat in startBeat..startBeat + 15f -> {
-          image(g1, 0f, 0f)
-
-          val (px, py) = piecePos[2]
-          val t = cnorm(beat, startBeat, startBeat + 1f)
-          val s = cube1(t)
-          pushMatrix()
-          translate(640f, 360f)
-          rotateZ(PI)
-          scale(lerp(0.4f, 1.0f, s))
-          translate(-(px + 0.5f) * 1280f, -(py + 0.5f) * 720f)
-          drawPieces(app, px, py)
-          noStroke()
-          fill(alpha(pieceColors[py][px], inv(s)))
-          rect(px * 1280f, py * 720f, 1280f, 720f)
-          popMatrix()
-        }
-        beat in startBeat + 15f..startBeat + 16f -> {
-          /**
-           * |
-           * |↖
-           *  ----
-           */
-          val t = cnorm(beat, startBeat + 15f, startBeat + 16f)
-          val s = cube1(t)
-          val rad = s * PI / 2
-          val radiusE = (height / 2f) / tan(PI / 6) + 640f
-          val radiusT = 640f
-          val cx = 640f
-          val cy = 360f
-          val cz = -640f
-          val ex = cx - radiusE * sin(rad)
-          val ez = cz + radiusE * cos(rad)
-          val tx = cx - radiusT * sin(rad)
-          val tz = cz + radiusT * cos(rad)
-          camera(ex, cy, ez, tx, cy, tz, 0f, 1f, 0f)
-          image(g1, 0f, 0f)
-          beginShape()
-          texture(g2)
-          vertex(0f, 0f, -1280f, 0f, 0f)
-          vertex(0f, 720f, -1280f, 0f, 720f)
-          vertex(0f, 720f, 0f, 1280f, 720f)
-          vertex(0f, 0f, 0f, 1280f, 0f)
-          endShape()
-          camera()
-        }
-        beat in startBeat + 16f..startBeat + 26f -> {
-          image(g2, 0f, 0f)
-        }
-        beat in startBeat + 26f..startBeat + 28f -> {
-          val (px, py) = piecePos[3]
-          val t = cnorm(beat, startBeat + 26f, startBeat + 27.5f)
-          val s = cube1(t)
-          pushMatrix()
-          translate(640f, 360f)
-          rotateX(-s * PI)
-          scale(lerp(1.0f, 0.4f, s))
-          translate(-(px + 0.5f) * 1280f, -(py + 0.5f) * 720f)
-
-          noStroke()
-          fill(opaq(pieceColors[py][px]))
-          if(s <= 0.5f) {
-            image(g2, px * 1280f, py * 720f)
-          } else {
-            rect(px * 1280f, py * 720f, 1280f, 720f)
-          }
-          popMatrix()
-        }
-        beat in startBeat + 28f..startBeat + 30f -> {
-          val (px, py) = piecePos[3]
-          pushMatrix()
-          translate(640f, 360f)
-          rotateZ(PI)
-          scale(0.4f)
-          translate(-(px + 0.5f) * 1280f, -(py + 0.5f) * 720f)
-
-          noStroke()
-          fill(opaq(pieceColors[py][px]))
-          rect(px * 1280f, py * 720f, 1280f, 720f)
-
-          (0..2).forEach {
-            val start = startBeat + 28f + it * 1 / 3f
-            if(beat >= start) {
-              val t = cnorm(beat, start, start + 1.5f)
-              val s = quad1(t)
-              blink1[it].forEach { e ->
-                val (px2, py2) = e
-                noStroke()
-                fill(alpha(pieceColorsExpanded[py2 + 1][px2 + 1], inv(s)))
-                rect(px2 * 1280f, py2 * 720f, 1280f, 720f)
-              }
-            }
-          }
-
-          (0..2).forEach {
-            val start = startBeat + 28f + (it + 4) * 1 / 3f
-            if(beat >= start) {
-              blink2[it].forEach { e ->
-                val (px2, py2) = e
-                noStroke()
-                fill(opaq(pieceColorsExpanded[py2 + 1][px2 + 1]))
-                rect(px2 * 1280f, py2 * 720f, 1280f, 720f)
-              }
-            }
-          }
-
-          popMatrix()
-        }
+      if (frame == beatToFrame(startBeat).toInt() + 1) {
+        states.forEach { it.init() }
+        triState = Array(15, { Array(23, { mutableListOf(0f, 0f, 0f) } ) })
       }
-      if(frame == beat30) {
-        initPanelState(app)
-      }
-      if(beat in startBeat + 30f..startBeat + 32f) {
+
+      withGraphics(graph) {
+        clear()
+        colorMode(RGB, 1f)
+        rectMode(CENTER)
+        ellipseMode(CENTER)
+        blendMode(ADD)
+        states.forEach {
+          it.update(beat - startBeat)
+        }
+
+        states[0].state.forEachIndexed { ix, e ->
+          if(e > 0f) {
+            val (px, py) = transform2(ix, 48)
+            triState[5 + py][px][random(3f).toInt()] = e
+          }
+        }
+        states[1].state.forEachIndexed { ix, e ->
+          if(e > 0f) {
+            val (px, py) = transform2(ix, 30)
+            triState[10 + py][px][random(3f).toInt()] = e
+          }
+        }
+        states[2].state.forEachIndexed { ix, e ->
+          if(e > 0f) {
+            val (px, py) = transform2(ix, 50)
+            triState[3 + py][px][random(3f).toInt()] = e
+          }
+        }
+        states[3].state.forEachIndexed { ix, e ->
+          if(e > 0f) {
+            val (px, py) = transform2(ix, 28)
+            triState[7 + py][px][random(3f).toInt()] = e
+          }
+        }
+        states[4].state.forEachIndexed { ix, e ->
+          if(e > 0f) {
+            val (px, py) = transform2(ix, 40)
+            triState[8 + py][px][random(3f).toInt()] = e
+          }
+        }
+
+
+        stroke(1f)
+        strokeWeight(5f)
+        noFill()
+
         pushMatrix()
         translate(640f, 360f)
-        scale(0.4f)
-        (0..2).forEach { iy ->
-          (0..2).forEach { ix ->
-            val (pos, vel, rot) = panelState[iy][ix]
+        scale(1.3f)
+        translate(-640f, -360f)
+
+        imageMode(CENTER)
+        (0..22).forEach { ix ->
+          (0..14).forEach { iy ->
+            val e = triState[iy][ix]
             pushMatrix()
-            translate(pos.x, pos.y, pos.z)
-            val dr = frame - beat30
-            rotateX(rot.x * dr)
-            rotateY(rot.y * dr)
-            rotateZ(rot.z * dr)
-            noStroke()
-            fill(opaq(pieceColorsExpanded[3 - iy][5 - ix]))
-            rect(-640f, -360f, 1280f, 720f)
+            if(iy % 2 == 0) translate(ix * wid, iy * hei)
+            else translate((ix + 0.5f) * wid, iy * hei)
+
+            tint(0.3f * e[0])
+            if(e[0] > 0f) image(res.tri1, 0f, 0f)
+            tint(0.3f * e[1])
+            if(e[1] > 0f) image(res.tri2, 0f, 0f)
+            tint(0.3f * e[2])
+            if(e[2] > 0f) image(res.tri3, 0f, 0f)
             popMatrix()
           }
         }
+        tint(1f)
+        imageMode(CORNER)
         popMatrix()
-        panelState = panelState.mapIndexed { iy, ey ->
-          ey.mapIndexed { ix, e ->
-            val (pos, vel, rot) = e
-            val npos = pos.add(vel)
-            val nvel = vel.add(PVector(0f, 9f, 0f))
-            Triple(npos, nvel, rot)
+
+        kick.forEach {
+          if(bin(it, it + 1f)) {
+            val t = bnorm(it, it + 1f)
+            val y = lerp(60f, -20f, quad1(t))
+            val a = inv(t) * 0.05f
+            val w = lerp(25f, 0f, t)
+            noFill()
+            stroke(a)
+            strokeWeight(w)
+            line(0f, y, 1280f, y)
+            line(0f, 720 - y, 1280f, 720 - y)
+          }
+        }
+
+        cymbal.forEach {
+          if(bin(it, it + 2f)) {
+            val t = bnorm(it, it + 2f)
+            val s = quad1(t) * 800f
+            val a = inv(t) * 0.1f
+            val w = lerp(10f, 0f, t)
+            noFill()
+            stroke(a)
+            strokeWeight(w)
+            ellipse(640f, 360f, s, s)
+          }
+        }
+
+        brush.map { bnorm1(it, it + 2f) }.min()?.let {
+          val s = quad1(it)
+          tint(lerp(0.15f, 0f, s))
+          image(res.leftRight, 0f, 0f)
+          tint(1f)
+        }
+
+        triState.forEachIndexed { i, ey ->
+          ey.forEachIndexed { i, e ->
+            e[0] = max(e[0] - 0.01f, 0f)
+            e[1] = max(e[1] - 0.01f, 0f)
+            e[2] = max(e[2] - 0.01f, 0f)
           }
         }
       }
+
+      if(bin(3f, 35f)) image(bg, 0f, 0f)
+      blendMode(ADD)
+      if(bin(0f, 3f)) {
+        tint(1f, 1f, 1f, bnorm(0f, 3f))
+      }
+      if(bin(32f, 35f)) {
+        tint(1f, 1f, 1f, inv(bnorm(32f, 35f)))
+      }
+      image(graph, 0f, 0f)
+      tint(1f)
+      blendMode(BLEND)
     }
   }
 
-  fun initPanelState(app: Main) {
-    app.randomSeed(236934618L)
-    panelState = panelState.mapIndexed { iy, ey -> ey.mapIndexed { ix, e ->
-      val pos = PVector((ix - 1) * 1280f, (iy - 1f) * 720f, 0f)
-      val vel = PVector(
-              app.random((ix - 1) * 50f - 10f, (ix - 1) * 50f + 10f),
-              app.random(0f, 0f),
-              app.random(-20f, -5f))
-      val rot = PVector(
-              app.random(-0.1f, 0.1f),
-              app.random(-0.1f, 0.1f),
-              app.random(-0.1f, 0.1f))
-      Triple(pos, vel, rot)
-    } }
-  }
+  fun transform(noteNum: Int, offset: Int) = max(0, min(22, noteNum - offset))
 
+  fun transform2(noteNum: Int, offset: Int): Pair<Int, Int> {
+    val a = max(0, min(45, noteNum - offset))
+    if(a % 2 == 0) return Pair(a / 2, 0)
+    return Pair(a / 2, 1)
+  }
 }
 
+class State(val data: Array<Triple<Float, Int, Int>>) {
+  var state = Array(128, { 0f }).toMutableList()
+  var cursor = 0
+
+  fun init() {
+    cursor = 0
+  }
+
+  fun update(beat: Float) {
+    state.forEachIndexed { i, e -> state[i] = 0f }
+    val newCursor = data.indexOfFirst { beat < it.first }
+    if(newCursor > cursor) {
+      (cursor..newCursor - 1).forEach {
+        val e = data[it]
+        state[e.second] = e.third / 127f
+      }
+    }
+    cursor = newCursor
+  }
+}
